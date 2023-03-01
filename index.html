@@ -44,7 +44,7 @@
 
         <div class="btn-group dropdown">
 
-          <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown"
+          <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown"
             aria-expanded="false">
             example@nubela.co <i class="fe fe-chevron-down ms-3"></i>
           </button>
@@ -63,7 +63,7 @@
                   <label for="floatingInput">Team name</label>
                 </div>
 
-                <button class="btn btn-outline-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
+                <button class="btn btn-outline-success w-100" data-bs-toggle="tooltip" data-bs-placement="top"
                   title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
                   Create new team
                 </button>
@@ -78,11 +78,11 @@
                 <div class="row align-items-center g-0">
 
                   <div class="col-2">
-                    <i class="fe fe-check"></i>
+                    <i class="fe fe-check text-secondary"></i>
                   </div>
 
                   <div class="col-10">
-                    <span class="text-primary small">
+                    <span class="text-secondary small">
                       example@nubela.co
                     </span>
 
@@ -101,7 +101,7 @@
 
               <a href="#!" type="button">
 
-                <span class="text-primary small">
+                <span class="text-secondary small">
                   yowassap@thenounproject.com
                 </span>
 
@@ -117,7 +117,7 @@
 
               <a href="#!" type="button">
 
-                <span class="text-primary small">
+                <span class="text-secondary small">
                   john@welut.com
                 </span>
 
@@ -147,27 +147,24 @@
         <div class="row">
 
           <div class="col-12">
-            <label class="mb-2 text-gray-700">
+            <label class="text-gray-700">
               Credits
-              <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
+              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;">
+                <span class="h4">
+                  1000
+                </span>
+              </code>
             </label>
 
-            <div class="progress">
-              <div class="progress-bar bg-secondary" role="progressbar" style="width: 48%;" aria-valuenow="48"
-                aria-valuemin="0" aria-valuemax="100">
-                480/1000
-              </div>
-            </div>
-
             <label class="small text-muted mt-2">
-              Auto-topup <span class="badge bg-white text-primary border border-primary fw-bold">Enabled</span>
+              Auto-topup <span class="badge bg-white text-success disabled border border-success fw-bold">Enabled</span>
             </label>
 
           </div>
 
           <div class="col-12">
 
-            <a class="btn btn-outline-primary w-100 mt-3" href="account-buy-credits.html">
+            <a class="btn btn-outline-success w-100 mt-3" href="account-buy-credits.html">
               Buy credits
             </a>
 
@@ -177,9 +174,9 @@
 
       </div>
 
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="sidebarCollapse">
-    
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="sidebarCollapse">
+
         <!-- Credits (xs)-->
         <div class="navbar-user d-md-none mb-4">
 
@@ -188,25 +185,22 @@
             <div class="col-12">
               <label class="mb-2 text-gray-700">
                 Credits
-                <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
+                <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;">
+                  <span class="h4">
+                    1000
+                  </span>
+                </code>
               </label>
 
-              <div class="progress">
-                <div class="progress-bar bg-secondary" role="progressbar" style="width: 48%;" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100">
-                  480/1000
-                </div>
-              </div>
-
               <label class="small text-muted mt-2">
-                Auto-topup <span class="badge bg-white text-primary border border-primary fw-bold">Enabled</span>
+                Auto-topup <span class="badge bg-white text-success border border-success fw-bold">Enabled</span>
               </label>
 
             </div>
 
             <div class="col-12">
 
-              <a class="btn btn-outline-primary w-100 mt-3" href="account-buy-credits.html">
+              <a class="btn btn-outline-success w-100 mt-3" href="account-buy-credits.html">
                 Buy credits
               </a>
 
@@ -222,7 +216,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="true"
               aria-controls="sidebarPages">
-              <i class="fe fe-file"></i> Proxycurl API
+              <i class="fe fe-file"></i> Sapiengraph API
             </a>
             <div class="collapse show" id="sidebarPages">
               <ul class="nav nav-sm flex-column">
@@ -258,12 +252,12 @@
               <ul class="nav nav-sm flex-column">
                 <li class="nav-item">
                   <a href="./account-plans-and-payments.html" class="nav-link">
-                    <span class="border-start border-2 ps-3 ">Plan and payments</span>
+                    <span class="border-start border-2 ps-3">Plan and payments</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="./account-buy-credits.html" class="nav-link">
-                    <span class="border-start border-2 ps-3">Buy credits</span>
+                    <span class="border-start border-2 ps-3 ">Buy credits</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -283,7 +277,7 @@
               <ul class="nav nav-sm flex-column">
                 <li class="nav-item">
                   <a href="index.html" class="nav-link fw-bold">
-                    <span class="border-start border-2 ps-3 text-primary border-primary"">Change email</span>
+                    <span class="border-start border-2 ps-3 text-success border-success">Change email</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -324,7 +318,7 @@
 
           <div class="btn-group dropup">
 
-            <button type="button" class="btn btn-outline-primary dropdown-toggle w-100" data-bs-toggle="dropdown"
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle w-100" data-bs-toggle="dropdown"
               aria-expanded="false">
               example@nubela.co <i class="fe fe-chevron-up ms-3"></i>
             </button>
@@ -343,7 +337,7 @@
                     <label for="floatingInput">Team name</label>
                   </div>
 
-                  <button class="btn btn-outline-primary w-100" data-bs-toggle="tooltip" data-bs-placement="top"
+                  <button class="btn btn-outline-success w-100" data-bs-toggle="tooltip" data-bs-placement="top"
                     title="We are fleshing out this new dashboard iteratively. We are intending to include a Teams feature and it is coming soon!">
                     Create new team
                   </button>
@@ -358,11 +352,11 @@
                   <div class="row align-items-center g-0">
 
                     <div class="col-2">
-                      <i class="fe fe-check"></i>
+                      <i class="fe fe-check text-secondary"></i>
                     </div>
 
                     <div class="col-10">
-                      <span class="text-primary small">
+                      <span class="text-secondary small">
                         example@nubela.co
                       </span>
 
@@ -381,7 +375,7 @@
 
                 <a href="#!" type="button">
 
-                  <span class="text-primary small">
+                  <span class="text-secondary small">
                     yowassap@blackireng666.com
                   </span>
 
@@ -397,7 +391,7 @@
 
                 <a href="#!" type="button">
 
-                  <span class="text-primary small">
+                  <span class="text-secondary small">
                     john@welut.com
                   </span>
 
@@ -422,23 +416,6 @@
 
 
         </div>
-
-        <!-- Dashboard toggle-->
-        <div class="justify-content-between d-flex mb-3">
-          <div class="col-8">
-          <label class="h3 fw-normal mb-md-1 mb-0 ms-1 text-gray-700" for="dashboardSwitch">
-            Back to old dashboard
-          </label>
-          </div>
-          <div class="col-auto form-switch form-check mt-0 mt-md-2">
-            <input type="checkbox" class="form-check-input" id="dashboardSwitch">
-          </div>
-
-        </div>
-    
-        </div> <!-- / .navbar-collapse -->
-    
-      </div>
     </nav>
 
   <!-- MAIN CONTENT -->
