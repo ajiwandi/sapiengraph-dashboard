@@ -149,14 +149,17 @@
         <div class="row">
 
           <div class="col-12">
-            <label class="text-gray-700">
+            <label class="mb-2 text-gray-700">
               Credits
-              <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;">
-                <span class="h4">
-                  1000
-                </span>
-              </code>
+              <code class="h2 text-black" style="font-family: Cerebri Sans,sans-serif;"> 480</code><code class="small text-gray-700" style="font-family: Cerebri Sans,sans-serif;">/1000 </code>
             </label>
+
+            <div class="progress">
+              <div class="progress-bar bg-secondary" role="progressbar" style="width: 48%;" aria-valuenow="48"
+                aria-valuemin="0" aria-valuemax="100">
+                480/1000
+              </div>
+            </div>
 
             <label class="small text-muted mt-2">
               Auto-topup <span class="badge bg-white text-success disabled border border-success fw-bold">Enabled</span>
@@ -683,113 +686,119 @@
 
             <div class="card-body">
 
-              <div class="row align-items-top">
+              <div class="row">
 
-                <div class="col-12">
+                <div class="col-12 table-responsive">
+                
+                  <table class="table table-responsive table-bordered" >
+                
+                    <colgroup>
+                      <col class="col-md-2">
+                      <col class="col-md-2">
+                      <col class="col-md-2 bg-lighter">
+                      <col class="col-md-2">
+                      <col class="col-md-2">
+                    </colgroup>
+                
+                    <thead>
+                      <tr class="">
+                        <th scope="col" class="text-uppercase text-dark">Free Trial</th>
+                        <th scope="col" class="text-uppercase text-dark">Lite</th>
+                        <th scope="col" class="text-uppercase text-dark">Pro</th>
+                        <th scope="col" class="text-uppercase text-dark">Business</th>
+                        <th scope="col" class="text-uppercase text-dark">Enterprise</th>
+                      </tr>
+                    </thead>
+                
+                    <tbody class="">
 
-                  <!-- Tabs -->
-                  <ul class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <li class="nav-item">
-                      <div class="h3 nav-link active fw-bold" id="nav-pay-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-pay" type="button" role="tab" aria-controls="nav-pay" aria-selected="true">
-                        Pay-as-you-go
-                      </div>
+                      <tr>
+                        <td>
+                          <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                            FREE</code></td>
+                        <td>
+                          <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                            $9.90</code>/ mo</td>
+                        <td>
+                          <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                            $99</code>/ mo</td>
+                        <td>
+                          <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                            $500</code>/ mo</td>
+                        <td>
+                          <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                            Custom</code></td>
+                      </tr>
 
-                    </li>
+                      <tr>
+                        <td>One time trial of <br>
+                          <code class="badge bg-light text-black"
+                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">10</span></code> credits</td>
+                        <td>
+                          <code class="badge bg-light text-black"
+                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">100</span></code> credits/ mo</td>
+                        <td>
+                          <code class="badge bg-light text-black"
+                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">4600</span></code> credits/ mo</td>
+                        </td>
+                        <td>
+                          <code class="badge bg-light text-black"
+                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">25000</span></code> credits/ mo</td>
+                        </td>
+                        <td>Custom credit</td>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>None</td>
+                        <td>Use our formulas up to 
+                          <code class="badge bg-light text-black"
+                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                            100</span></code> times</td>
+                        <td>Use our formulas up to 
+                          <code class="badge bg-light text-black"
+                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                            4600</span></code> times</td>
+                        <td>Use our formulas up to 
+                          <code class="badge bg-light text-black"
+                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                            25000</span></code> times</td>
+                        <td>use our formula in Custom</td>
+                      </tr>
 
-                  </ul>
-                  <!-- Tabs content -->
-                  <div class="tab-content" id="nav-tabContent">
-
-                    <div class="tab-pane fade show active" id="nav-pay" role="tabpanel" aria-labelledby="nav-pay-tab">
-                      <div class="table-responsive">
-
-
-
-                        <table class="table table-responsive table-borderless table-hover ">
-
-                          <colgroup>
-                            <col class="col-md-2">
-                            <col class="col-md-2">
-                            <col class="col-md-2">
-                            <col class="col-md-2 bg-lighter">
-                            <col class="col-md-2">
-                          </colgroup>
-                      
-                          <thead class="text-success lead">
-                            <tr class="" >
-                              <th scope="col" class="text-uppercase text-success">Free Trial</th>
-                              <th scope="col" class="text-uppercase text-success">Lite</th>
-                              <th scope="col" class="text-uppercase text-success">Pro</th>
-                              <th scope="col" class="text-uppercase text-success">Business</th>
-                              <th scope="col" class="text-uppercase text-success">Enterprise</th>
-                            </tr>
-                          </thead>
-        
-                          <tbody>
-                            <tr>
-                              <td>FREE</td>
-                              <td>$9.90 / mo</td>
-                              <td>$99 / mo</td>
-                              <td>$500 / mo</td>
-                              <td>Contact us</td>
-                            </tr>
-                            <tr>
-                              <td>One time trial of 10 credits</td>
-                              <td>100 credits / mo</td>
-                              <td>4600 credits / mo</td>
-                              <td>25000 credits / mo</td>
-                              <td>Contact us</td>
-                            </tr>
-                            <tr>
-                              <td>None</td>
-                              <td>Use our formulas up to 100 times</td>
-                              <td>Use our formulas up to 4600 times</td>
-                              <td>Use our formulas up to 25000 times</td>
-                              <td>Contact us</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Buy
-                                </button>
-                              </td>
-                              <td>
-                                <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Buy
-                                </button>
-                              </td>
-                              <td>
-                                <button type="submit" class="btn btn-outline-secondary disabled w-100" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Current plan
-                                </button>
-                              </td>
-                              <td>
-                                <button type="submit" class="btn btn-success w-100" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Buy
-                                </button>
-                              </td>
-                              <td>
-                                <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                                  data-bs-target="#modalNext">
-                                  Buy
-                                </button>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                      </div>
-                    </div>
-
-                  </div>
-
-
-
+                      <tr>
+                        <td>
+                          <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalNext">
+                            Buy
+                          </button>
+                        </td>
+                        <td>
+                          <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalNext">
+                            Buy
+                          </button>
+                        </td>
+                        <td>
+                          <button type="submit" class="btn btn-outline-secondary disabled w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalNext">
+                            Current plan
+                          </button>
+                        </td>
+                        <td>
+                          <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
+                            Buy
+                          </button>
+                        </td>
+                        <td>
+                          <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                            data-bs-target="#modalNext">
+                            Contact us
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
                 </div>
 
               </div>

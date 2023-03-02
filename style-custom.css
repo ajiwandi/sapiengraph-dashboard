@@ -33,3 +33,25 @@
     margin-top: -12rem !important;
 }
 
+table, tr {
+    border: hidden;
+}
+
+td,th {
+    border-color: #edf2f8;
+    
+}
+
+td 
+{
+
+    height: 70px; 
+    width: 30px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #01bd93;
+    background-color: #ccf7e5;
+}
+
+
