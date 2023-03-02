@@ -243,7 +243,7 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
-        <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+        <a type="button" class="btn-close h1 ps-4 pt-4" data-bs-dismiss="modal" aria-label="Close">
         </a>
 
         <div class="modal-body">
@@ -257,8 +257,9 @@
               </h1>
 
               <p class="mb-6 lead">
-                Confirm of a one-time purchase of <span class="fw-bold">600</span> credits for <span
-                  class="fw-bold">$49</span>?
+                Confirm of a one-time purchase of <span class="fw-bold">100</span> credits and <br>use our formulas up to
+                <span class="fw-bold">100</span> times for <span
+                  class="fw-bold">$9.90</span>?
               </p>
 
               <div class="row border-bottom pb-2 mb-4">
@@ -267,7 +268,7 @@
                     Credits
                   </h2>
                   <p class="lead">
-                    <span class="fw-bold">600</span> credits
+                    <span class="fw-bold">100</span> credits
                   </p>
                 </div>
 
@@ -276,7 +277,7 @@
                     Total
                   </h2>
                   <p class="lead fw-bold">
-                    $49
+                    $9.90
                   </p>
                 </div>
               </div>
@@ -291,7 +292,7 @@
                 <div class="col-6 text-end">
                   <p class="lead">
                     Visa ending in <span class="fw-bold me-2">1234</span>
-                    <a class="fw-bold border-bottom border-primary" href="account-plans-and-payments.html">
+                    <a class="fw-bold border-bottom border-success text-success" href="account-plans-and-payments.html">
                       Change
                     </a>
                   </p>
@@ -306,15 +307,11 @@
                 </div>
               </div>
 
-              <a class="btn btn-lg btn-primary w-100" href="account-buy-credits-after-stripe-prompt.html">
-                Buy credits and enable credit auto-topup
+              <a class="btn btn-lg btn-success w-100" href="account-buy-credits-after-stripe-prompt.html">
+                Buy credits
               </a>
 
-              <a class="btn btn-lg btn-outline-primary w-100 mt-3" href="account-buy-credits-after-stripe-prompt.html">
-                Buy credits only
-              </a>
-
-              <button class="btn btn-lg btn-outline-primary w-100 mt-3" data-dismiss="modal">
+              <button class="btn btn-lg btn-link text-success w-100 mt-3 close" data-bs-dismiss="modal">
                 Cancel
               </button>
 
@@ -426,13 +423,6 @@
                         </div>
                       </div>
                     </div>
-
-                    <!---
-                    <div class="col mb-4">
-                      <input id="name" type="text" value="100"  readonly="" class="form-control h1 bg-lighter">
-                    </div>
-                  -->
-
                   </div>
 
                   <div class="progress" style="height: 24px;">
@@ -484,11 +474,11 @@
                 
                     <thead>
                       <tr class="">
-                        <th scope="col" class="text-uppercase text-dark">Free Trial</th>
-                        <th scope="col" class="text-uppercase text-dark">Lite</th>
-                        <th scope="col" class="text-uppercase text-dark">Pro</th>
-                        <th scope="col" class="text-uppercase text-dark">Business</th>
-                        <th scope="col" class="text-uppercase text-dark">Enterprise</th>
+                        <th scope="col" class="text-uppercase text-dark">Free Trial<br></th>
+                        <th scope="col" class="text-uppercase text-dark">Lite <br></th>
+                        <th scope="col" class="text-uppercase text-dark">Pro <br><span class="fw-normal h5 text-muted">Current plan</span></th>
+                        <th scope="col" class="text-uppercase text-dark">Business<br></th>
+                        <th scope="col" class="text-uppercase text-dark">Enterprise<br></th>
                       </tr>
                     </thead>
                 
@@ -544,7 +534,7 @@
                           <code class="badge bg-light text-black"
                           style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
                             25000</span></code> times</td>
-                        <td>Use our formula in Custom</td>
+                        <td>Use our formulas in Custom</td>
                       </tr>
 
                       <tr>
@@ -561,9 +551,9 @@
                           </button>
                         </td>
                         <td>
-                          <button type="submit" class="btn btn-outline-secondary disabled w-100" data-bs-toggle="modal"
+                          <button type="submit" class="btn btn-outline-secondary w-100" data-bs-toggle="modal"
                             data-bs-target="#modalNext">
-                            Current plan
+                            Cancel plan
                           </button>
                         </td>
                         <td>
@@ -578,6 +568,7 @@
                           </button>
                         </td>
                       </tr>
+                      
                     </tbody>
                   </table>
                 

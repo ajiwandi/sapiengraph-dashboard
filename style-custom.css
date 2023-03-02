@@ -43,11 +43,11 @@ td,th {
     
 }
 
+
 td 
 {
-
-    height: 70px; 
-    width: 30px;
+    height: 80px; 
+    width: 100px;
 }
 
 .accordion-button:not(.collapsed) {
