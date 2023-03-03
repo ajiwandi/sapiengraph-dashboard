@@ -33,7 +33,6 @@
     margin-top: -12rem !important;
 }
 
-
 table, tr {
     border: hidden;
 }
@@ -42,7 +41,6 @@ td,th {
     border-color: #edf2f8;
     
 }
-
 
 td 
 {
@@ -53,7 +51,6 @@ td
 .accordion-button:not(.collapsed) {
     color: black;
     background-color: #edf2f8;
-
 }
 
 
