@@ -495,7 +495,9 @@
 
                 </div>
               </div>
+
             </div>
+
           </div>
 
           <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -554,6 +556,7 @@
                         </div>
                       </div>
                     </div>
+
                   </div>
 
                   <div class="progress" style="height: 24px;">
@@ -591,117 +594,440 @@
 
               <div class="row">
 
-                <div class="col-12 table-responsive">
-                
-                  <table class="table table-bordered" >
-                
-                    <colgroup>
-                      <col style="width: 20%;">
-                      <col style="width: 20%;">
-                      <col class="bg-lighter" style="width: 20%;">
-                      <col style="width: 20%;">
-                      <col style="width: 20%;">
-                    </colgroup>
-                
-                    <thead>
-                      <tr class="">
-                        <th scope="col" class="text-uppercase text-dark">Free Trial<br></th>
-                        <th scope="col" class="text-uppercase text-dark">Lite <br></th>
-                        <th scope="col" class="text-uppercase text-dark">Pro <br><span class="fw-normal h5 text-muted">Current plan</span></th>
-                        <th scope="col" class="text-uppercase text-dark">Business<br></th>
-                        <th scope="col" class="text-uppercase text-dark">Enterprise<br></th>
-                      </tr>
-                    </thead>
-                
-                    <tbody class="">
+                <div class="col-12">
+                  <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
 
-                      <tr>
-                        <td>
-                          <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                            FREE</code></td>
-                        <td>
-                          <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                            $9.90</code>/ mo</td>
-                        <td>
-                          <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                            $99</code>/ mo</td>
-                        <td>
-                          <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                            $500</code>/ mo</td>
-                        <td>
-                          <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                            Custom</code></td>
-                      </tr>
-
-                      <tr>
-                        <td>One time trial of <br>
-                          <code class="badge bg-light text-black"
-                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">10</span></code> credits</td>
-                        <td>
-                          <code class="badge bg-light text-black"
-                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">100</span></code> credits/ mo</td>
-                        <td>
-                          <code class="badge bg-light text-black"
-                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">4600</span></code> credits/ mo</td>
-                        </td>
-                        <td>
-                          <code class="badge bg-light text-black"
-                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">25000</span></code> credits/ mo</td>
-                        </td>
-                        <td>Custom credit</td>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>None</td>
-                        <td>Use our formulas up to 
-                          <code class="badge bg-light text-black"
-                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
-                            100</span></code> times</td>
-                        <td>Use our formulas up to 
-                          <code class="badge bg-light text-black"
-                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
-                            4600</span></code> times</td>
-                        <td>Use our formulas up to 
-                          <code class="badge bg-light text-black"
-                          style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
-                            25000</span></code> times</td>
-                        <td>Use our formulas in Custom</td>
-                      </tr>
-
-                      <tr>
-                        <td>
-                          <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                            data-bs-target="#modalNext">
-                            Upgrade plan
-                          </button>
-                        </td>
-                        <td>
-                          <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                            data-bs-target="#modalNext">
-                            Upgrade plan
-                          </button>
-                        </td>
-                        <td>
-                          <button type="submit" class="btn btn-outline-secondary w-100" data-bs-toggle="modal"
-                            data-bs-target="#modalCancel">
-                            Cancel plan
-                          </button>
-                        </td>
-                        <td>
-                          <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
-                            Upgrade plan
-                          </button>
-                        </td>
-                        <td>
-                          <a href="#!" type="submit" class="btn btn-outline-success w-100">
-                            Contact us
-                        </a>
-                        </td>
-                      </tr>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="annual-tab" data-bs-toggle="tab" data-bs-target="#annual-tab-pane" type="button" role="tab" aria-controls="annual-tab-pane" aria-selected="true">
+                        Annual
+                      </button>
+                    </li>
+  
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly-tab-pane" type="button" role="tab" aria-controls="monthly-tab-pane" aria-selected="false">
+                        Monthly
+                      </button>
+                    </li>
+  
+                  </ul>
+  
+                  <div class="tab-content" id="myTabContent">
+  
+                    <!--Annual-->
+                    <div class="tab-pane fade show active" id="annual-tab-pane" role="tabpanel" aria-labelledby="annual-tab" tabindex="0">
                       
-                    </tbody>
-                  </table>
-                
+                      <div class="table-responsive">
+                  
+                        <table class="table table-bordered" >
+                      
+                          <colgroup>
+                            <col style="width: 20%;">
+                            <col style="width: 20%;" class="bg-lighter">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                          </colgroup>
+                      
+                          <thead>
+                            <tr>
+                              <th scope="col" class="text-uppercase text-dark">Lite <br></th>
+                              <th scope="col" class="text-uppercase text-dark">Pro <br><span class="fw-normal h5 text-muted">Current plan</span></th>
+                              <th scope="col" class="text-uppercase text-dark">Pro+<br></th>
+                              <th scope="col" class="text-uppercase text-dark">Business<br></th>
+                              <th scope="col" class="text-uppercase text-dark">Enterprise<br></th>
+                            </tr>
+                          </thead>
+                      
+                          <tbody>
+      
+                            <tr>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $490 </code>/ year
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $2990 </code>/ year
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $8990 </code>/ year
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $18990 </code>/ year
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  Custom</code>
+                              </td>
+                            </tr>
+      
+                            <tr>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">150,000</span></code> credits/ mo
+                              </td>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">1,500,000</span></code> credits/ mo
+                              </td>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">449,500</span></code> credits/ mo
+                              </td>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">1,055,000</span></code> credits/ mo
+                              </td>
+                              <td>
+                                Custom credit
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Use our formulas up to 
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                                  150,000</span></code> times
+                              </td>
+                              <td>Use our formulas up to 
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                                  1,500,000</span></code> times
+                              </td>
+                              <td>Use our formulas up to 
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                                  449,500</span></code> times
+                              </td>
+                              <td>Use our formulas up to 
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                                  1,055,000</span></code> times
+                              </td>
+                              <td>
+                                Use our formulas in Custom
+                              </td>
+                            </tr>
+      
+                            <tr>
+                              <td>
+                                <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                  data-bs-target="#modalNext">
+                                  Upgrade plan
+                                </button>
+                              </td>
+                              <td>
+                                <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                  data-bs-target="#modalNext">
+                                  Upgrade plan
+                                </button>
+                              </td>
+                              <td>
+                                <button type="submit" class="btn btn-outline-secondary w-100" data-bs-toggle="modal"
+                                  data-bs-target="#modalCancel">
+                                  Cancel plan
+                                </button>
+                              </td>
+                              <td>
+                                <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                  Upgrade plan
+                                </button>
+                              </td>
+                              <td>
+                                <a href="#!" type="submit" class="btn btn-outline-success w-100">
+                                  Contact us
+                              </a>
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+  
+                        <h2 class="text-center mt-5 mb-2">
+                          Introducing Fresh Addon
+                        </h2>
+      
+                        <p class="text-gray-700 text-center lead mb-4">
+                          If added to a plan, we will provide fresh profile data <span class="text-info fw-bold">&lt;29 days</span>
+                        </p>
+      
+                        <table class="table table-bordered" >
+                      
+                          <colgroup>
+                            <col style="width: 20%;">
+                            <col class="bg-lighter" style="width: 20%;">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                          </colgroup>
+                      
+                          <thead>
+                            <tr class="">
+                              <th scope="col" class="text-uppercase text-dark">Lite <br></th>
+                              <th scope="col" class="text-uppercase text-dark">Pro <br><span class="fw-normal h5 text-muted">Current plan</span></th>
+                              <th scope="col" class="text-uppercase text-dark">Pro+<br></th>
+                              <th scope="col" class="text-uppercase text-dark">Business<br></th>
+                            </tr>
+                          </thead>
+                      
+                          <tbody>
+      
+                            <tr>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $50</code>/ mo
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $300</code>/ mo
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $900</code>/ mo
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $1900</code>/ mo
+                              </td>
+                            </tr>
+      
+                            <tr>
+                              <td>
+                                Scrape 1,250 fresh profiles / mo 
+                              </td>
+                              <td>
+                                Scrape 12,500 fresh profiles / mo 
+                              </td>
+                              <td>
+                                Scrape 44,950 fresh profiles / mo 
+                              </td>
+                              <td>
+                                Scrape 1,055,000 fresh profiles / mo
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+      
+                        <div class="custom-control custom-checkbox text-center mb-2">
+                          <input class="custom-control-input" type="checkbox" value="" id="customCheck">
+                          <label class="text-gray-700 custom-control-label" for="customCheck">
+                            I agree to add the Fresh Addon on my Sapiengraph subscription plan (optional).
+                          </label>
+                        </div>
+                      
+                      </div>
+
+                    </div>
+  
+                    <!--Monthly-->
+                    <div class="tab-pane fade" id="monthly-tab-pane" role="tabpanel" aria-labelledby="monthly-tab" tabindex="0">
+                      
+                      <div class="table-responsive">
+                  
+                        <table class="table table-bordered" >
+                      
+                          <colgroup>
+                            <col style="width: 20%;">
+                            <col style="width: 20%;" class="bg-lighter">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                          </colgroup>
+                      
+                          <thead>
+                            <tr>
+                              <th scope="col" class="text-uppercase text-dark">Lite <br></th>
+                              <th scope="col" class="text-uppercase text-dark">Pro <br><span class="fw-normal h5 text-muted">Current plan</span></th>
+                              <th scope="col" class="text-uppercase text-dark">Pro+<br></th>
+                              <th scope="col" class="text-uppercase text-dark">Business<br></th>
+                              <th scope="col" class="text-uppercase text-dark">Enterprise<br></th>
+                            </tr>
+                          </thead>
+                      
+                          <tbody>
+      
+                            <tr>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $49 </code>/ mo
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $299 </code>/ mo
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $899 </code>/ mo
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $1899 </code>/ mo
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  Custom</code>
+                              </td>
+                            </tr>
+      
+                            <tr>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">12,500</span></code> credits/ mo
+                              </td>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">125,000</span></code> credits/ mo
+                              </td>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">449,500</span></code> credits/ mo
+                              </td>
+                              <td>
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">1,055,000</span></code> credits/ mo
+                              </td>
+                              <td>
+                                Custom credit
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Use our formulas up to 
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                                  12,500</span></code> times
+                              </td>
+                              <td>Use our formulas up to 
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                                  125,000</span></code> times
+                              </td>
+                              <td>Use our formulas up to 
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                                  449,500</span></code> times
+                              </td>
+                              <td>Use our formulas up to 
+                                <code class="badge bg-light text-black"
+                                style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
+                                  1,055,000</span></code> times
+                              </td>
+                              <td>
+                                Use our formulas in Custom
+                              </td>
+                            </tr>
+      
+                            <tr>
+                              <td>
+                                <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                  data-bs-target="#modalNext">
+                                  Upgrade plan
+                                </button>
+                              </td>
+                              <td>
+                                <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
+                                  data-bs-target="#modalNext">
+                                  Upgrade plan
+                                </button>
+                              </td>
+                              <td>
+                                <button type="submit" class="btn btn-outline-secondary w-100" data-bs-toggle="modal"
+                                  data-bs-target="#modalCancel">
+                                  Cancel plan
+                                </button>
+                              </td>
+                              <td>
+                                <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
+                                  Upgrade plan
+                                </button>
+                              </td>
+                              <td>
+                                <a href="#!" type="submit" class="btn btn-outline-success w-100">
+                                  Contact us
+                              </a>
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+  
+                        <h2 class="text-center mt-5 mb-2">
+                          Introducing Fresh Addon
+                        </h2>
+      
+                        <p class="text-gray-700 text-center lead mb-4">
+                          If added to a plan, we will provide fresh profile data <span class="text-info fw-bold">&lt;29 days</span>
+                        </p>
+      
+                        <table class="table table-bordered" >
+                      
+                          <colgroup>
+                            <col style="width: 20%;">
+                            <col class="bg-lighter" style="width: 20%;">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                          </colgroup>
+                      
+                          <thead>
+                            <tr class="">
+                              <th scope="col" class="text-uppercase text-dark">Lite <br></th>
+                              <th scope="col" class="text-uppercase text-dark">Pro <br><span class="fw-normal h5 text-muted">Current plan</span></th>
+                              <th scope="col" class="text-uppercase text-dark">Pro+<br></th>
+                              <th scope="col" class="text-uppercase text-dark">Business<br></th>
+                            </tr>
+                          </thead>
+                      
+                          <tbody>
+      
+                            <tr>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $50</code>/ mo
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $300</code>/ mo
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $900</code>/ mo
+                              </td>
+                              <td>
+                                <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
+                                  $1900</code>/ mo
+                              </td>
+                            </tr>
+      
+                            <tr>
+                              <td>
+                                Scrape 1,250 fresh profiles / mo 
+                              </td>
+                              <td>
+                                Scrape 12,500 fresh profiles / mo 
+                              </td>
+                              <td>
+                                Scrape 44,950 fresh profiles / mo 
+                              </td>
+                              <td>
+                                Scrape 1,055,000 fresh profiles / mo
+                              </td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
+      
+                        <div class="custom-control custom-checkbox text-center mb-2">
+                          <input class="custom-control-input" type="checkbox" value="" id="customCheck">
+                          <label class="text-gray-700 custom-control-label" for="customCheck">
+                            I agree to add the Fresh Addon on my Sapiengraph subscription plan (optional).
+                          </label>
+                        </div>
+                      
+                      </div>
+  
+                    </div>
+  
+                  </div>
                 </div>
 
               </div>
