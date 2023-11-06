@@ -33,8 +33,9 @@
     margin-top: -12rem !important;
 }
 
-table, tr {
-    border: hidden;
+
+tr.noBorder td, thead {
+  border-bottom-style: hidden;
 }
 
 td,th {
@@ -58,3 +59,9 @@ td
     box-shadow: 0 0 0 0.2rem rgba(245, 255, 247, 0.25);
 } 
 
+
+.pagination>li.active>a {
+    border-color: #03d97e !important;
+    background: #03d97e !important;
+  color: #fff;
+}
