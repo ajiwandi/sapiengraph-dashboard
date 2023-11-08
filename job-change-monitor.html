@@ -143,8 +143,8 @@
             <div class="collapse show" id="sidebarBilling">
               <ul class="nav nav-sm flex-column">
                 <li class="nav-item">
-                  <a href="./account-plans-and-payments.html" class="nav-link fw-bold">
-                    <span class="border-start border-2 ps-3 text-success border-success">Plan and payments</span>
+                  <a href="./account-plans-and-payments.html" class="nav-link">
+                    <span class="border-start border-2 ps-3">Plan and payments</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -156,7 +156,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="job-change-monitor.html">
+            <a class="nav-link fw-bold text-success" href="job-change-monitor.html">
               <i class="fe fe-briefcase"></i> Job Change Monitor
             </a>
           </li>
@@ -211,37 +211,6 @@
     </div>
   </nav>
 
-    <!--MODAL TOPUP-->
-    <div class="modal fade" id="modalTopup" tabindex="-1" aria-labelledby="modalTopupLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-    
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalTopupLabel">Credits top up</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-    
-          <div class="modal-body">
-    
-            <p class="mt-2">
-              You will pay $100 worth of credits. Are you sure you want to top up?
-            </p>
-
-            <p class="small text-info mt-auto">
-              <span class="text-danger">*</span>Credits expire monthly.
-            </p>
-    
-          </div>
-    
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">No, cancel top-up</button>
-            <button type="button" class="btn btn-primary">Yes, top up $100</button>
-          </div>
-    
-        </div>
-      </div>
-    </div>
-
     <!-- MAIN CONTENT -->
     <div class="main-content">
 
@@ -263,47 +232,16 @@
 
                     <!-- Title -->
                     <h1 class="header-title">
-                      Billing
+                      Job Change Monitor
                     </h1>
 
                   </div>
                 </div> <!-- / .row -->
-
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Nav -->
-                    <ul class="nav nav-tabs nav-overflow header-tabs">
-                      <li class="nav-item">
-                        <a href="account-plans-and-payments.html" class="nav-link active border-success">
-                          Plan and payments
-                        </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="index.html" class="nav-link">
-                          Buy credits
-                        </a>
-                      </li>
-                    </ul>
-
-                  </div>
-                </div>
               </div>
             </div>
 
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
 
-              Create a new Google Sheet document or open your existing document to start using the Sapiengraph
-              <a class="btn btn-sm btn-outline-white ms-2" href="https://docs.google.com/spreadsheets" target="_blank">
-                Open Google Sheet <i class="fe fe-arrow-right"></i>
-              </a>
-              
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-              </button>
-  
-            </div>
-
-            <!--User plan-->
+            <!-- Card -->
             <div class="card">
 
               <div class="card-header">
@@ -312,180 +250,169 @@
 
                     <!-- Title -->
                     <h4 class="card-header-title">
-                      Sapiengraph plan
+                      Job Change Monitor List
                     </h4>
 
                   </div>
-
                 </div>
               </div>
 
-              <!--Plan info-->
-              <div class="card-body">
+              <div class="table-responsive-lg">
+                <table class="table table-sm table-nowrap card-table">
+                  <thead>
+                    <tr class="border-show">
+                      <th>Person</th>
+                      <th>Current job</th>
+                      <th>Last checked</th>
+                    </tr>
+                  </thead>
+                  <tbody class="fs-base">
 
-                <!--Plan-->
-                <div class="row align-items-top border-bottom py-4">
-
-                  <div class="col-12 col-md-6">
-                    <h4 class="text-dark">
-                      <code class="text-dark h4"
-                          style="font-family: Cerebri Sans,sans-serif;">$99</code>/month (<code class="text-dark h4"
-                          style="font-family: Cerebri Sans,sans-serif;">4600</code> credits)
-                    </h4>
-    
-                    <p class="mt-1 text-gray-700">
-                      To be renewed on 14 June 2023
-                    </p>
-
-                  </div>
-
-                  <div class="col-12 col-md-6 text-end">
-
-                    <a href="index.html" class="btn btn-outline-dark">
-                      Change plan
-                    </a>
-
-                  </div>
-
-                </div>
-
-                <div class="row pt-4">
-
-                  <div class="col-12">
-  
-                    <div class="row mb-3">
-  
-                      <div class="col">
-                        <label>
-                          <i class="neu-wallet h3"></i> Credits
-                        </label>
-                      </div>
-  
-                    </div>
-  
-                    <div class="row">
-  
-                      <div class="col mb-4">
-                        <div class="border bg-lighter" style="border-radius: 8px; height: 56px;">
-                          <div class="pt-3 ps-3 text-gray-700">
-                            <code class="h1 text-black" style="font-family: Cerebri Sans,sans-serif;"> 3220</code><code
-                              class="h4 fw-normal text-gray-700"
-                              style="font-family: Cerebri Sans,sans-serif;">/4600</code>
+                    <tr>
+                      <td>
+                        <div class="row align-items-center">
+                          <div class="col-3 col-lg-3 col-xl-2">
+                            <div class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-2.jpg" alt="person picture">
+                            </div>
+                          </div>
+                          <div class="col-9 col-lg-9 col-xl-10 ms-n1 text-truncate">
+                            <p class="text-black mb-0">David King</p>
+                            <a class="text-primary small" href="#!" target="_blank">
+                              <i class="neu-br-linkedin-sq ml-n1"></i> linkedin.com/in/davidking
+                            </a>
                           </div>
                         </div>
-                      </div>
-                    </div>
-  
-                    <div class="progress" style="height: 24px;">
-                      <div class="progress-bar bg-secondary" role="progressbar" aria-label="Example with label" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                        3220/4600
-                      </div>
-                    </div>
-  
+                      </td>
+                      <td>
+                        Software Engineer, Apple
+                      </td>
+                      <td>
+                        20 Jan 2022, 20:02
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row align-items-center">
+                          <div class="col-3 col-lg-3 col-xl-2">
+                            <div class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-3.jpg" alt="person picture">
+                            </div>
+                          </div>
+                          <div class="col-9 col-lg-9 col-xl-10 ms-n1 text-truncate">
+                            <p class="text-black mb-0">Karim Paul</p>
+                            <a class="text-primary small" href="#!" target="_blank">
+                              <i class="neu-br-linkedin-sq ml-n1"></i> linkedin.com/in/karimpaul
+                            </a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        Senior Software Engineer, Google
+                      </td>
+                      <td>
+                        20 Jan 2022, 19:45
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row align-items-center">
+                          <div class="col-3 col-lg-3 col-xl-2">
+                            <div class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-5.jpg" alt="person picture">
+                            </div>
+                          </div>
+                          <div class="col-9 col-lg-9 col-xl-10 ms-n1 text-truncate">
+                            <p class="text-black mb-0">Kimberly Rose</p>
+                            <a class="text-primary small" href="#!" target="_blank">
+                              <i class="neu-br-linkedin-sq ml-n1"></i> linkedin.com/in/kimberlyse
+                            </a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        Junior Software Engineer, Apple
+                      </td>
+                      <td>
+                        20 Jan 2022, 18:50
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row align-items-center">
+                          <div class="col-3 col-lg-3 col-xl-2">
+                            <div class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-7.jpg" alt="person picture">
+                            </div>
+                          </div>
+                          <div class="col-9 col-lg-9 col-xl-10 ms-n1 text-truncate">
+                            <p class="text-black mb-0">John Takeshi</p>
+                            <a class="text-primary small" href="#!" target="_blank">
+                              <i class="neu-br-linkedin-sq ml-n1"></i> linkedin.com/in/takejo
+                            </a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        Junior Software Engineer, Apple
+                      </td>
+                      <td>
+                        20 Jan 2022, 18:45
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="row align-items-center">
+                          <div class="col-3 col-lg-3 col-xl-2">
+                            <div class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-6.jpg" alt="person picture">
+                            </div>
+                          </div>
+                          <div class="col-9 col-lg-9 col-xl-10 ms-n1 text-truncate">
+                            <p class="text-black mb-0">Bim Samson</p>
+                            <a class="text-primary small" href="#!" target="_blank">
+                              <i class="neu-br-linkedin-sq ml-n1"></i> linkedin.com/in/bimsam
+                            </a>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        Software Engineer, Google
+                      </td>
+                      <td>
+                        20 Jan 2022, 18:25
+                      </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+
+                <div class="row mt-4 mb-3 ms-3">
+
+                  <div class="col-12 col-md-6">
+                    <nav aria-label="Page">
+                      <ul class="pagination">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
                   </div>
-  
+
                 </div>
 
               </div>
 
-            </div>
-
-            <!-- Payment method -->
-            <div class="card">
-              <div class="card-header">
-                <div class="row align-items-center">
-                  <div class="col">
-
-                    <!-- Title -->
-                    <h4 class="card-header-title">
-                      Payment methods
-                    </h4>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <!-- Button -->
-                    <a class="btn btn-sm btn-outline-dark" href="#!">
-                      Add method
-                    </a>
-
-                  </div>
-                </div>
-              </div>
-              <div class="card-body">
-
-                <!-- List group -->
-                <div class="list-group list-group-flush my-n3">
-
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Image -->
-                        <img class="img-fluid" src="assets/img/payment-methods/visa.svg" alt="..." style="max-width: 38px;">
-
-                      </div>
-                      <div class="col ms-n2">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          Visa ending in <code class="text-black h4"
-                          style="font-family: Cerebri Sans,sans-serif;">1234</code>
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Expires 3/2024
-                        </small>
-
-                      </div>
-                      <div class="col-auto">
-
-                        <!-- Badge -->
-                        <span class="badge bg-light">
-                          Default
-                        </span>
-
-                      </div>
-                    </div> <!-- / .row -->
-                  </div>
-                  
-                  <div class="list-group-item">
-                    <div class="row align-items-center">
-                      <div class="col-auto">
-
-                        <!-- Image -->
-                        <img class="img-fluid" src="assets/img/payment-methods/mastercard.svg" alt="..." style="max-width: 38px;">
-
-                      </div>
-                      <div class="col ms-n2">
-
-                        <!-- Heading -->
-                        <h4 class="mb-1">
-                          Mastercard ending in <code class="text-black h4"
-                          style="font-family: Cerebri Sans,sans-serif;">1234</code>
-                        </h4>
-
-                        <!-- Text -->
-                        <small class="text-muted">
-                          Expires 3/2024
-                        </small>
-
-                      </div>
-
-                      <div class="col-auto">
-
-                        <button class="btn btn-sm btn-white">
-                          Make default
-                        </button>
-
-                      </div>
-
-                    </div> <!-- / .row -->
-                  </div>
-                </div>
-
-              </div>
             </div>
 
             <br>
