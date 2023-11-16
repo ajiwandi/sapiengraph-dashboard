@@ -1,3 +1,42 @@
+/* Toggle switch */
+.form-switch .form-check-input:checked {
+  background-color: #22c55e; 
+}
+
+/* Custom CSS for counting animation */
+.count-up {
+    display: inline-block;
+    transition: transform 1s ease-in-out;
+}
+
+/* Custom CSS to change Bootstrap outline success button colors */
+.btn-outline-success {
+    border-color: #22c55e !important;
+    color: #22c55e !important;
+}
+
+.btn-outline-success:hover {
+    color: #fff !important; /* Text color on hover */
+    background-color: #22c55e !important; /* Background color on hover */
+}
+
+.btn-outline-success:active {
+    color: #fff !important; /* Text color on active */
+    background-color: #22c55e !important; /* Background color on active */
+    border-color: #22c55e !important; /* Border color on active */
+}
+
+/* Custom CSS for change success color */
+.alert-success {
+    background-color: #22c55e !important;
+}
+.bg-success {
+    background-color: #22c55e !important;
+}
+.text-success {
+    color: #22c55e !important;
+}
+
 .div-inline{
     display:inline-block;
 }

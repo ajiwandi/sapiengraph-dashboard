@@ -638,18 +638,18 @@
                 <form class="d-flex align-items-center justify-content-center">
 
                   <!-- Label -->
-                  <span class="text-opacity-80">
+                  <span class="text-opacity-80 mb-1">
                     Monthly
                   </span>
     
                   <!-- Switch -->
-                  <div class="form-check form-switch mx-3">
+                  <div class="form-check form-switch ms-3 me-2">
                     <input class="form-check-input" type="checkbox" role="switch" id="planToggle" checked>
                   </div>
     
                   <!-- Label -->
                   <span class="text-opacity-80">
-                    Annual
+                    Annual <span class="badge bg-warning fw-bold ms-1 mb-1">Save 17%</span>
                   </span>
     
                 </form>
@@ -787,7 +787,7 @@
 
                       <td>
                         <div class="custom-control custom-checkbox mb-2">
-                          <input class="custom-control-input" type="checkbox" value="" id="customCheck">
+                          <input class="custom-control-input" type="checkbox" id="customCheck">
                           <label class="text-info fw-bold text-uppercase small custom-control-label" for="customCheck">
                             <span class="text-danger">*</span> Fresh addon
                           </label>
@@ -808,7 +808,7 @@
 
                       <td>
                         <div class="custom-control custom-checkbox mb-2">
-                          <input class="custom-control-input" type="checkbox" value="" id="customCheck" checked>
+                          <input class="custom-control-input" type="checkbox" id="customCheck" checked>
                           <label class="text-info fw-bold text-uppercase small custom-control-label" for="customCheck">
                             <span class="text-danger">*</span> Fresh addon
                           </label>
@@ -829,7 +829,7 @@
 
                       <td>
                         <div class="custom-control custom-checkbox mb-2">
-                          <input class="custom-control-input" type="checkbox" value="" id="customCheck">
+                          <input class="custom-control-input" type="checkbox" id="customCheck">
                           <label class="text-info fw-bold text-uppercase small custom-control-label" for="customCheck">
                             <span class="text-danger">*</span> Fresh addon
                           </label>
@@ -850,7 +850,7 @@
                       
                       <td>
                         <div class="custom-control custom-checkbox mb-2">
-                          <input class="custom-control-input" type="checkbox" value="" id="customCheck">
+                          <input class="custom-control-input" type="checkbox" id="customCheck">
                           <label class="text-info fw-bold text-uppercase small custom-control-label" for="customCheck">
                             <span class="text-danger">*</span> Fresh addon
                           </label>
@@ -918,13 +918,12 @@
 
               <!--Pricing and hiding-->
               <script>
-
-                // Pricing data  
+                // Pricing data
                 const pricing = {
                   monthly: {
                     lite: '$49',
                     pro: '$299',
-                    proPlus: '$899', 
+                    proPlus: '$899',
                     business: '$1899'
                   },
                   annual: {
@@ -934,58 +933,80 @@
                     business: '$1582'
                   }
                 };
-                
+              
                 // Get elements
                 const toggle = document.getElementById('planToggle');
                 const litePrice = document.getElementById('litePrice');
                 const proPrice = document.getElementById('proPrice');
                 const proPlusPrice = document.getElementById('proPlusPrice');
                 const bizPrice = document.getElementById('bizPrice');
-                
-                // const toggle = 
-                const annually = document.querySelectorAll('.paid-annually'); 
+              
+                const annually = document.querySelectorAll('.paid-annually');
                 const credits = document.querySelectorAll('.free-credits');
-
+              
+                // Animate number function
+                function animateNumber(element, start, end, duration) {
+                  let startTimestamp = null;
+                  const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    element.innerHTML = Math.floor(progress * (end - start) + start);
+                    if (progress < 1) {
+                      window.requestAnimationFrame(step);
+                    }
+                  };
+                  window.requestAnimationFrame(step);
+                }
+              
                 // Toggle handler
-                toggle.addEventListener('click', () => {
-                
+                function handleToggle() {
                   if (toggle.checked) {
-                    
                     // Update to annual pricing
                     updatePricing(pricing.annual);
-
-                      // Show annually and credits using Bootstrap classes
-                      annually.forEach(el => el.classList.remove('d-none'));
-                      credits.forEach(el => el.classList.remove('d-none'));
-                    
+              
+                    // Show annually and credits using Bootstrap classes
+                    annually.forEach(el => el.classList.remove('d-none'));
+                    credits.forEach(el => el.classList.remove('d-none'));
+              
+                    // Animate to new numbers
+                    animateNumber(litePrice, 49, 40, 500);
+                    animateNumber(proPrice, 299, 249, 500);
+                    animateNumber(proPlusPrice, 899, 749, 500);
+                    animateNumber(bizPrice, 1899, 1582, 500);
                   } else {
-                    
                     // Update to monthly pricing
                     updatePricing(pricing.monthly);
-                   
+              
                     // Hide annually and credits using Bootstrap classes
                     annually.forEach(el => el.classList.add('d-none'));
                     credits.forEach(el => el.classList.add('d-none'));
-                    
+              
+                    // Animate to new numbers
+                    animateNumber(litePrice, 40, 49, 500);
+                    animateNumber(proPrice, 249, 299, 500);
+                    animateNumber(proPlusPrice, 749, 899, 500);
+                    animateNumber(bizPrice, 1582, 1899, 500);
                   }
-                
-                });
-
-                  // Initially hide annually and credits using Bootstrap classes
-                  annually.forEach(el => el.classList.add('d-none'));
-                  credits.forEach(el => el.classList.add('d-none'));            
-                
+                }
+              
+                // Initially hide annually and credits using Bootstrap classes
+                annually.forEach(el => el.classList.add('d-none'));
+                credits.forEach(el => el.classList.add('d-none'));
+              
+                // Attach the event listener
+                toggle.addEventListener('click', handleToggle);
+              
+                // Trigger the toggle handler initially
+                handleToggle();
+              
                 // Update pricing function
                 function updatePricing(plan) {
-                
                   litePrice.textContent = plan.lite;
                   proPrice.textContent = plan.pro;
                   proPlusPrice.textContent = plan.proPlus;
                   bizPrice.textContent = plan.business;
-                
                 }
-
-              </script>
+              </script>              
 
             </div>            
 
