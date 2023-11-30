@@ -21,6 +21,15 @@
     
     <!-- Title -->
     <title>Sapiengraph - Dashboard</title>
+    <style>
+
+      th.active-header {
+      color: black !important;
+    }
+    th:hover {
+      cursor: pointer;
+    }
+    </style>
   </head>
   <body>
 
@@ -258,14 +267,14 @@
               </div>
 
               <div class="table-responsive-xxl">
-                <table class="table table-sm table-nowrap card-table">
+                <table id="myTable" class="table table-sm table-nowrap card-table">
                   <thead>
                     <tr class="border-show">
-                      <th>Person</th>
-                      <th>Previous job</th>
-                      <th>Current job</th>
-                      <th>Last checked</th>
-                      <th class="text-end">Status</th>
+                      <th onclick="sortTable(0)" id="header0">Person <i class="fas fa-sort"></i></th>
+                      <th onclick="sortTable(1)" id="header1">Previous job <i class="fas fa-sort"></i></th>
+                      <th onclick="sortTable(2)" id="header2">Current job <i class="fas fa-sort"></i></th>
+                      <th onclick="sortTable(3)" id="header3" class="active-header">Last checked <i class="fas fa-sort"></i></th>
+                      <th onclick="sortTable(4)" class="text-end" id="header4">Status <i class="fas fa-sort"></i></th>
                       <th></th>
                     </tr>
                   </thead>
@@ -557,6 +566,76 @@
     </div> <!-- / .main-content -->
 
     <!-- JAVASCRIPT -->
+
+    <!-- Table sorting JS-->
+    <script>
+      let currentColumn = 3; // Set Last checked as the default sorted column
+      let lastCheckedColumnSorted = true;
+  
+      document.addEventListener("DOMContentLoaded", function(event) {
+        // Simulate click on "Last checked" header after the page loads (default sort)
+        sortTable(currentColumn);
+        lastCheckedColumnSorted = false;
+      });
+  
+      function sortTable(columnIndex) {
+        const table = document.getElementById('myTable');
+        const tbody = table.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+  
+        rows.sort((a, b) => {
+          let cellA = a.getElementsByTagName('td')[columnIndex].innerText.trim().toLowerCase();
+          let cellB = b.getElementsByTagName('td')[columnIndex].innerText.trim().toLowerCase();
+  
+          if (columnIndex === 3) { // For Last checked column, reverse sorting
+            [cellA, cellB] = [cellB, cellA];
+          }
+  
+          return cellA.localeCompare(cellB);
+        });
+  
+        tbody.innerHTML = '';
+        rows.forEach(row => {
+          tbody.appendChild(row);
+        });
+  
+        resetHeaders();
+        const clickedHeader = document.getElementById(`header${columnIndex}`);
+  
+        if (!lastCheckedColumnSorted && columnIndex === 3) {
+          clickedHeader.classList.add('active-header');
+          lastCheckedColumnSorted = true;
+        } else {
+          clickedHeader.classList.add('active-header');
+        }
+  
+        currentColumn = columnIndex;
+        resetSortIcons(columnIndex);
+      }
+  
+      function resetHeaders() {
+        const headers = document.querySelectorAll('th');
+        headers.forEach(header => {
+          header.classList.remove('active-header');
+        });
+      }
+  
+      function resetSortIcons(exceptIndex) {
+        const icons = document.querySelectorAll('.fa-sort');
+        icons.forEach(icon => {
+          icon.classList.remove('fa-sort-up', 'fa-sort-down');
+          icon.classList.add('fa-sort');
+        });
+  
+        const clickedHeaderIcon = document.getElementById(`header${exceptIndex}`).getElementsByTagName('i')[0];
+        clickedHeaderIcon.classList.remove('fa-sort');
+        clickedHeaderIcon.classList.add('fas', 'fa-sort');
+      }
+    </script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  
+
     <!-- Map JS -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
     
