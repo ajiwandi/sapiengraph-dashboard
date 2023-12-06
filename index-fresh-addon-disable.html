@@ -617,284 +617,436 @@
               <div class="mb-4 mt-4">
 
                 <form class="d-flex align-items-center justify-content-center">
-
+  
                   <!-- Label -->
                   <span class="text-opacity-80 mb-1">
                     Monthly
                   </span>
-    
+  
                   <!-- Switch -->
                   <div class="form-check form-switch ms-3 me-2">
                     <input class="form-check-input" type="checkbox" role="switch" id="planToggle" checked>
                   </div>
-    
+  
                   <!-- Label -->
                   <span class="text-opacity-80">
-                    Annual <span class="badge bg-warning fw-bold ms-1 mb-1">Save 17%</span>
+                    Annual <span class="badge bg-warning fw-bold ms-1 mb-1">+ 2 months free credits</span>
                   </span>
-    
+  
                 </form>
 
               </div>
 
-              <div class="table-responsive">
-                  
-                <table class="table table-bordered" >
-              
-                  <colgroup>
-                    <col style="width: 20%;">
-                    <col style="width: 20%;">
-                    <col style="width: 20%;">
-                    <col style="width: 20%;">
-                    <col style="width: 20%;">
-                  </colgroup>
-              
-                  <thead>
-                    <tr class="noBorder">
-                      <th scope="col" class="text-uppercase text-dark">Lite<br></th>
-                      <th scope="col" class="text-uppercase text-dark">Pro <br></th>
-                      <th scope="col" class="text-uppercase text-dark">Pro+<br></th>
-                      <th scope="col" class="text-uppercase text-dark">Business<br></th>
-                      <th scope="col" class="text-uppercase text-dark">Enterprise<br></th>
-                    </tr>
-                  </thead>
-              
-                  <tbody>
+              <div class="row g-3">
+                
+                <div class="col-12 col-lg-6 col-xl-3">
 
-                    <tr>
+                  <div class="card card-body">
 
-                      <td>
-                        <code id="litePrice" class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                          $49</code> / mo
-                          <div class="h6 text-muted mt-2 text-uppercase paid-annually">
-                            Paid annually
-                          </div>
-                      </td>
+                    <div class="mb-4">
+                      <img class="img-fluid img icons" width="40" alt="lite icon" src="assets/img/icons/lite.svg">
+                    </div>
 
-                      <td>
-                        <code id="proPrice" class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                          $299</code> / mo
-                          <div class="h6 text-muted mt-2 text-uppercase paid-annually">
-                            Paid annually
-                          </div>
-                      </td>
+                    <h2 class="h3 fw-bold mb-4">
+                      Lite
+                    </h2>
 
-                      <td>
-                        <code id="proPlusPrice" class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                          $899</code> / mo
-                          <div class="h6 text-muted mt-2 text-uppercase paid-annually">
-                            Paid annually
-                          </div>
-                      </td>
+                    <div class="text-change unselectable">
+                      <del class="text-muted">$588</del> <span class="font-weight-bold text-info">$480/yr</span>
+                    </div>
+  
+                    <h3 id="litePrice" class="display-3 font-weight-bold mb-0">
+                      $<span>40</span>
+                    </h3>
+  
+                    <div class="mb-3">
+                      <p class="small text-muted billedText">
+                        /mo, billed annually
+                      </p>
+                    </div>
+  
+                    <div class="mb-3">
+                      <button type="submit" class="btn btn-outline-success rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
+                        Upgrade plan
+                      </button>
+                    </div>
 
-                      <td>
-                        <code id="bizPrice" class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                          $1899</code> / mo
-                          <div class="h6 text-muted mt-2 text-uppercase paid-annually">
-                            Paid annually
-                          </div>
-                      </td>
+                    <hr class="mb-5">
+  
+                    <small class="h6 font-weight-bold text-uppercase text-muted">
+                      Features included
+                    </small>
+  
+                    <div class="mt-2 mb-4">
+  
+                      <p class="mb-2">
+                        <i class="fe fe-database text-success"></i> 12,500 credits <i class="fe fe-info small" data-bs-toggle="tooltip" data-bs-placement="right"
+                          title="+2 months FREE credits if paid annually."></i>
+                      </p>
+  
+                      <p class="mb-0">
+                        <i class="fe fe-zap text-success"></i> 12,500 formulas
+                      </p>
+  
+                    </div>
+  
+                    <hr>
 
-                      <td>
-                        <code class="h1 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                          Custom</code>
-                      </td>
+                    <div class="text-center mt-n4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="If added to a plan, we will provide fresh profile data &lt;29 days.">
+                      <span class="badge bg-white rounded-pill h6 text-info border border-info">
+                        <i class="fe fe-info"></i> Fresh add-on
+                      </span>
+                    </div>
+  
+                    <div class="mt-3">
+  
+                      <p class="mb-2">
+                        <i class="fe fe-dollar-sign text-success"></i> +$50<span class="h6">/mo</span>
+                      </p>
+  
+                      <p class="mb-5">
+                        <i class="fe fe-user text-success"></i> 1,250 fresh profiles
+                      </p>
+  
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="lite50">
+                        <label class="form-check-label" for="lite50">Enable fresh add-on </label>
+                      </div>                      
+  
+                    </div>
 
-                    </tr>
+                  </div>
 
-                    <tr>
-                      <td>
-                        <code class="badge bg-light text-black"
-                        style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">12,500</span></code> <span class="d-inline free-credits">+ 2083</span> credits / mo
-                        <p class="mb-0 text-uppercase small mt-2 text-info fw-bold free-credits">
-                          2 months free credits
-                        </p>
-                      </td>
-                      <td>
-                        <code class="badge bg-light text-black"
-                        style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">125,000</span></code> <span class="d-inline free-credits">+20,833</span> credits / mo
-                        <p class="mb-0 text-uppercase small mt-2 text-info fw-bold free-credits">
-                          2 months free credits
-                        </p>
-                      </td>
-                      <td>
-                        <code class="badge bg-light text-black"
-                        style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">449,500</span></code> <span class="d-inline free-credits">+ 74,916</span> credits / mo
-                        <p class="mb-0 text-uppercase small mt-2 text-info fw-bold free-credits">
-                          2 months free credits
-                        </p>
-                      </td>
-                      <td>
-                        <code class="badge bg-light text-black"
-                        style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">1,055,000</span></code> <span class="d-inline free-credits">+ 175,833</span> credits / mo
-                        <p class="mb-0 text-uppercase small mt-2 text-info fw-bold free-credits">
-                          2 months free credits
-                        </p>
-                      </td>
-                      <td>
-                        Custom credit
-                      </td>
-                    </tr>
+                </div>
 
-                    <tr>
+                <div class="col-12 col-lg-6 col-xl-3">
 
-                      <td>Use our formulas up to 
-                        <code class="badge bg-light text-black"
-                        style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
-                          12,500</span></code> times
-                      </td>
-                      <td>Use our formulas up to 
-                        <code class="badge bg-light text-black"
-                        style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
-                          125,000</span></code> times
-                      </td>
-                      <td>Use our formulas up to 
-                        <code class="badge bg-light text-black"
-                        style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
-                          449,500</span></code> times
-                      </td>
-                      <td>Use our formulas up to 
-                        <code class="badge bg-light text-black"
-                        style="font-family: Cerebri Sans,sans-serif;"> <span class="h4 fw-normal">
-                          1,055,000</span></code> times
-                      </td>
-                      <td>
-                        Use our formulas in Custom
-                      </td>
+                  <div class="card card-body border border-success shadow-lg">
 
-                    </tr>
+                    <div class="text-end mt-n5 mb-3">
+                      <span class="badge bg-success text-uppercase text-bg-success">Current plan</span>
+                    </div>
 
-                    <tr>
+                    <div class="mb-4 pt-2">
+                      <img class="img-fluid img icons" width="40" alt="pro icon" src="assets/img/icons/pro.svg">
+                    </div>
 
-                      <td>
-                        <div class="custom-control custom-checkbox mb-2">
-                          <input class="custom-control-input" type="checkbox" id="customCheck">
-                          <label class="text-info fw-bold text-uppercase small custom-control-label" for="customCheck">
-                            <span class="text-danger">*</span> Fresh addon
-                          </label>
+                    <h2 class="h3 fw-bold mb-4">
+                      Pro
+                    </h2>
+
+                    <div class="text-change unselectable">
+                      <del class="text-muted">$3588</del> <span class="font-weight-bold text-info">$2988/yr</span>
+                    </div>
+  
+                    <h3 id="proPrice" class="display-3 font-weight-bold mb-0">
+                      $<span>249</span>
+                    </h3>
+  
+                    <div class="mb-3">
+                      <p class="small text-muted billedText">
+                        /mo, billed annually
+                      </p>
+                    </div>
+  
+                    <div class="mb-3">
+                      <button type="submit" class="btn btn-outline-secondary rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#modalCancel">
+                        Cancel plan
+                      </button>
+                    </div>
+
+                    <hr class="mb-5">
+  
+                    <small class="h6 font-weight-bold text-uppercase text-muted">
+                      Features included
+                    </small>
+  
+                    <div class="mt-2 mb-4">
+  
+                      <p class="mb-2">
+                        <i class="fe fe-database text-success"></i> 125,000 credits <i class="fe fe-info small" data-bs-toggle="tooltip" data-bs-placement="right"
+                          title="+2 months FREE credits if paid annually."></i>
+                      </p>
+  
+                      <p class="mb-0">
+                        <i class="fe fe-zap text-success"></i> 125,000 formulas
+                      </p>
+  
+                    </div>
+  
+                    <hr>
+
+                    <div class="text-center mt-n4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="If added to a plan, we will provide fresh profile data &lt;29 days.">
+                      <span class="badge bg-white rounded-pill h6 text-info border border-info">
+                        <i class="fe fe-info"></i> Fresh add-on
+                      </span>
+                    </div>
+  
+                    <div class="mt-3">
+  
+                      <p class="mb-2">
+                        <i class="fe fe-dollar-sign text-success"></i> +$300<span class="h6">/mo</span>
+                      </p>
+  
+                      <p class="mb-5">
+                        <i class="fe fe-user text-success"></i> 12,500 fresh profiles
+                      </p>
+  
+                      <div class="form-check form-switch" checked>
+                        <input class="form-check-input" type="checkbox" role="switch" id="pro300">
+                        <label class="form-check-label" for="pro300">Enable fresh add-on </label>
+                      </div>                      
+  
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-3">
+
+                  <div class="card card-body">
+
+                    <div class="mb-4">
+                      <img class="img-fluid img icons" width="40" alt="pro+ icon" src="assets/img/icons/pro-plus.svg">
+                    </div>
+
+                    <h2 class="h3 fw-bold mb-4">
+                      Pro+
+                    </h2>
+
+                    <div class="text-change unselectable">
+                      <del class="text-muted">$10,788</del> <span class="font-weight-bold text-info">$8,988/yr</span>
+                    </div>
+  
+                    <h3 id="proPlusPrice" class="display-3 font-weight-bold mb-0">
+                      $<span>749</span>
+                    </h3>
+  
+                    <div class="mb-3">
+                      <p class="small text-muted billedText">
+                        /mo, billed annually
+                      </p>
+                    </div>
+  
+                    <div class="mb-3">
+                      <button type="submit" class="btn btn-outline-success rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
+                        Upgrade plan
+                      </button>
+                    </div>
+
+                    <hr class="mb-5">
+  
+                    <small class="h6 font-weight-bold text-uppercase text-muted">
+                      Features included
+                    </small>
+  
+                    <div class="mt-2 mb-4">
+  
+                      <p class="mb-2">
+                        <i class="fe fe-database text-success"></i> 449,500 credits <i class="fe fe-info small" data-bs-toggle="tooltip" data-bs-placement="right"
+                          title="+2 months FREE credits if paid annually."></i>
+                      </p>
+  
+                      <p class="mb-0">
+                        <i class="fe fe-zap text-success"></i> 449,500 formulas
+                      </p>
+  
+                    </div>
+  
+                    <hr>
+
+                    <div class="text-center mt-n4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="If added to a plan, we will provide fresh profile data &lt;29 days.">
+                      <span class="badge bg-white rounded-pill h6 text-info border border-info">
+                        <i class="fe fe-info"></i> Fresh add-on
+                      </span>
+                    </div>
+  
+                    <div class="mt-3">
+  
+                      <p class="mb-2">
+                        <i class="fe fe-dollar-sign text-success"></i> +$900<span class="h6">/mo</span>
+                      </p>
+  
+                      <p class="mb-5">
+                        <i class="fe fe-user text-success"></i> 44,950 fresh profiles
+                      </p>
+  
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="proplus900">
+                        <label class="form-check-label" for="proplus900">Enable fresh add-on </label>
+                      </div>                      
+  
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-3">
+
+                  <div class="card card-body">
+
+                    <div class="mb-4">
+                      <img class="img-fluid img icons" width="40" alt="business icon" src="assets/img/icons/business.svg">
+                    </div>
+
+                    <h2 class="h3 fw-bold mb-4">
+                      Business
+                    </h2>
+
+                    <div class="text-change unselectable">
+                      <del class="text-muted">$22,788</del> <span class="font-weight-bold text-info">$18,984/yr</span>
+                    </div>
+  
+                    <h3 id="bizPrice" class="display-3 font-weight-bold mb-0">
+                      $<span>1,582</span>
+                    </h3>
+  
+                    <div class="mb-3">
+                      <p class="small text-muted billedText">
+                        /mo, billed annually
+                      </p>
+                    </div>
+  
+                    <div class="mb-3">
+                      <button type="submit" class="btn btn-outline-success rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
+                        Upgrade plan
+                      </button>
+                    </div>
+
+                    <hr class="mb-5">
+  
+                    <small class="h6 font-weight-bold text-uppercase text-muted">
+                      Features included
+                    </small>
+  
+                    <div class="mt-2 mb-4">
+  
+                      <p class="mb-2">
+                        <i class="fe fe-database text-success"></i> 1,055,000  credits <i class="fe fe-info small" data-bs-toggle="tooltip" data-bs-placement="right"
+                          title="+2 months FREE credits if paid annually."></i>
+                      </p>
+  
+                      <p class="mb-0">
+                        <i class="fe fe-zap text-success"></i> 1,055,000  formulas
+                      </p>
+  
+                    </div>
+  
+                    <hr>
+
+                    <div class="text-center mt-n4" data-bs-toggle="tooltip" data-bs-placement="bottom" title="If added to a plan, we will provide fresh profile data &lt;29 days.">
+                      <span class="badge bg-white rounded-pill h6 text-info border border-info">
+                        <i class="fe fe-info"></i> Fresh add-on
+                      </span>
+                    </div>
+  
+                    <div class="mt-3">
+  
+                      <p class="mb-2">
+                        <i class="fe fe-dollar-sign text-success"></i> +$1900<span class="h6">/mo</span>
+                      </p>
+  
+                      <p class="mb-5">
+                        <i class="fe fe-user text-success"></i> 105,500 fresh profiles
+                      </p>
+  
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="business1900">
+                        <label class="form-check-label" for="business1900">Enable fresh add-on </label>
+                      </div>                      
+  
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-12">
+
+                  <div class="card card-body bg-dark px-5 py-5 mb-0" style="background-image: url(assets/img/illustrations/Pricing\ background\ illustration.svg);">
+
+                    <div class="row justify-content-center align-items-center">
+
+                      <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                        
+                        <div class="mb-4">
+                          <img class="img-fluid img icons" width="40" alt="enterprise icon" src="assets/img/icons/enterprise.svg">
                         </div>
-                        <code class="h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                          +$50
-                        </code> / mo
-                        <p class="mb-0 mt-3">
-                          Scrape
-                          <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;">
-                            <span class="h4 fw-normal">
-                              15,000
-                            </span>
-                          </code>
-                          fresh profiles / mo 
+
+                        <h2 class="display-4 mb-3 text-white">
+                          Sapiengraph for <span class="text-success">Enterprise</span>
+                        </h2>
+
+                        <p class="lead mb-4 text-white-50">
+                          Supercharge Google Sheets with advanced data enrichment. Effortless, secure, and tailored for precision.
                         </p>
-                      </td>
 
-                      <td>
-                        <div class="custom-control custom-checkbox mb-2">
-                          <input class="custom-control-input" type="checkbox" id="customCheck">
-                          <label class="text-info fw-bold text-uppercase small custom-control-label" for="customCheck">
-                            <span class="text-danger">*</span> Fresh addon
-                          </label>
-                        </div>
-                        <code class="h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                          +$300
-                        </code> / mo
-                        <p class="mb-0 mt-3">
-                          Scrape
-                          <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;">
-                            <span class="h4 fw-normal">
-                              150,000
-                            </span>
-                          </code>
-                          fresh profiles / mo 
-                        </p>
-                      </td>
-
-                      <td>
-                        <div class="custom-control custom-checkbox mb-2">
-                          <input class="custom-control-input" type="checkbox" id="customCheck">
-                          <label class="text-info fw-bold text-uppercase small custom-control-label" for="customCheck">
-                            <span class="text-danger">*</span> Fresh addon
-                          </label>
-                        </div>
-                        <code class="h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                          +$900
-                        </code> / mo
-                        <p class="mb-0 mt-3">
-                          Scrape
-                          <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;">
-                            <span class="h4 fw-normal">
-                              539,400
-                            </span>
-                          </code>
-                          fresh profiles / mo 
-                        </p>
-                      </td>
-                      
-                      <td>
-                        <div class="custom-control custom-checkbox mb-2">
-                          <input class="custom-control-input" type="checkbox" id="customCheck">
-                          <label class="text-info fw-bold text-uppercase small custom-control-label" for="customCheck">
-                            <span class="text-danger">*</span> Fresh addon
-                          </label>
-                        </div>
-                        <code class="h4 fw-bold text-black" style="font-family: Cerebri Sans,sans-serif;">
-                          +$1900
-                        </code> / mo
-                        <p class="mb-0 mt-3">
-                          Scrape
-                          <code class="badge bg-light text-black" style="font-family: Cerebri Sans,sans-serif;">
-                            <span class="h4 fw-normal">
-                              1,266,000
-                            </span>
-                          </code>
-                          fresh profiles / mo 
-                        </p>
-                      </td>                              
-
-                      <td>
-                        Custom credits
-                      </td>
-
-                    </tr>
-
-                    <tr>
-                      <td>
-                        <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                          data-bs-target="#modalNext">
-                          Upgrade plan
-                        </button>
-                      </td>
-                      <td>
-                        <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                          data-bs-target="#modalNext">
-                          Upgrade plan
-                        </button>
-                      </td>
-                      <td>
-                        <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal"
-                          data-bs-target="#modalNext">
-                          Upgrade plan
-                        </button>
-                      </td>
-                      <td>
-                        <button type="submit" class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#modalNext">
-                          Upgrade plan
-                        </button>
-                      </td>
-                      <td>
-                        <a href="#!" type="submit" class="btn btn-outline-success w-100">
+                        <button class="btn btn-lg btn-success rounded-pill w-50">
                           Contact us
-                      </a>
-                      </td>
-                    </tr>
-                    
-                  </tbody>
+                        </button>
 
-                </table>
+                      </div>
 
-                <p class="mb-0 text-muted">
-                  <span class="text-danger fw-bold">*</span>If added to a plan, we will provide fresh profile data <span class="fw-bold te text-info">&lt;29 days</span>.
-                </p>
-              
+                      <div class="col-12 col-lg-6">
+
+                        <div class="row">
+
+                          <div class="col-12 col-lg-6">
+
+                            <div class="mb-4">
+                              <h3 class="lead text-white mb-2">
+                                <i class="fe fe-database me-3"></i> Custom credits
+                              </h3>
+                              <p class="text-white-50 mb-0 small">
+                                Start from x,xxx,xxx credits per month
+                              </p>
+                            </div>
+
+                            <div class="mb-4">
+                              <h3 class="lead text-white mb-2">
+                                <i class="fe fe-zap me-3"></i> Custom formulas
+                              </h3>
+                              <p class="text-white-50 mb-0 small">
+                                Start from x,xxx,xxx formulas per month
+                              </p>
+                            </div>
+
+                          </div>
+
+                          <div class="col-12 col-lg-6">
+
+                            <div class="mb-4">
+                              <h3 class="lead text-white mb-2">
+                                <i class="fe fe-user me-3"></i> Custom fresh profiles
+                              </h3>
+                              <p class="text-white-50 mb-0 small">
+                                Start from x,xxx,xxx fresh profiles per month
+                              </p>
+                            </div>
+
+                            <div class="mb-0 mb-md-4">
+                              <h3 class="lead text-white mb-2">
+                                <i class="fe fe-phone me-3"></i> Priority support
+                              </h3>
+                              <p class="text-white-50 mb-0 small">
+                                We provide great support to help you
+                              </p>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
               </div>
 
             </div>            
