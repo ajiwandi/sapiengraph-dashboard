@@ -51,10 +51,10 @@ function handleToggle() {
   credits.forEach(el => el.classList.toggle('d-none', toggle.checked));
 
   // Animate to new numbers
-  animateNumber(litePrice, !toggle.checked ? 49 : 40, !toggle.checked ? 40 : 49, 500);
-  animateNumber(proPrice, !toggle.checked ? 299 : 249, !toggle.checked ? 249 : 299, 500);
-  animateNumber(proPlusPrice, !toggle.checked ? 899 : 749, !toggle.checked ? 749 : 899, 500);
-  animateNumber(bizPrice, !toggle.checked ? 1899 : 1582, !toggle.checked ? 1582 : 1899, 500);
+  animateNumber(litePrice, !toggle.checked ? 40 : 49, !toggle.checked ? 49 : 40, 500);
+  animateNumber(proPrice, !toggle.checked ? 249 : 299, !toggle.checked ? 299 : 249, 500);
+  animateNumber(proPlusPrice, !toggle.checked ? 749 : 899, !toggle.checked ? 899 : 749, 500);
+  animateNumber(bizPrice, !toggle.checked ? 1582 : 1899, !toggle.checked ? 1899 : 1582, 500);
 }
 
 // Initially hide annually and credits using Bootstrap classes
