@@ -16,6 +16,7 @@ const credits = document.querySelectorAll('.free-credits');
 
 // Get text container elements
 const textContainers = document.querySelectorAll('.text-change');
+const billedTexts = document.querySelectorAll('.billedText'); // Use a class instead of ID
 
 // Animate number function
 function animateNumber(element, start, end, duration) {
@@ -36,6 +37,11 @@ function handleToggle() {
   // Loop through each text container and toggle classes
   textContainers.forEach((textContainer) => {
     textContainer.classList.toggle('text-change', !toggle.checked);
+  });
+
+  // Update billed text for each element
+  billedTexts.forEach((element) => {
+    element.textContent = toggle.checked ? '/mo, billed annually' : '/mo, billed monthly';
   });
 
   // Update pricing and show/hide elements
