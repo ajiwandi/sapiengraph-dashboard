@@ -4,6 +4,10 @@
   color: white !important;
 }
 
+.form-check-input:checked {
+    background-color: #22c55e; /* Set the background color for form-check */
+}
+
 /* Toggle switch */
 .form-switch .form-check-input:checked {
   background-color: #22c55e; 
