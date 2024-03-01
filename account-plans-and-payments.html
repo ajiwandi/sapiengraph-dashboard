@@ -250,64 +250,45 @@
     </div>
   </nav>
 
-  <!--MODAL TOPUP-->
-  <div class="modal fade" id="modalTopup" tabindex="-1" aria-labelledby="modalTopupLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalTopupLabel">Credits top up</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-
-        <div class="modal-body">
-
-          <p class="mt-2">
-            You will pay $100 worth of credits. Are you sure you want to top up?
-          </p>
-
-          <p class="small text-info mt-auto">
-            <span class="text-danger">*</span>Credits expire monthly.
-          </p>
-
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">No, cancel
-            top-up</button>
-          <button type="button" class="btn btn-primary">Yes, top up $100</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
   <!--MODAL 12 MONTH CONTRACT CONFIRMATION-->
   <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
 
         <div class="modal-header">
-          <h5 class="modal-title" id="modal12Label">Credits top up</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h3 class="modal-title">
+            Are you sure want to enable 12 months contract for the same plan and get 50% OFF discount?
+          </h3>
         </div>
 
         <div class="modal-body">
 
-          <p class="mt-2">
-            You will pay $100 worth of credits. Are you sure you want to top up?
-          </p>
+          <div class="row justify-content-center">
 
-          <p class="small text-info mt-auto">
-            <span class="text-danger">*</span>Credits expire monthly.
-          </p>
+            <div class="col-12">
+
+              <p class="text-muted mb-0">
+                I agree to a 12-month service contract with Sapiengraph as detailed in the
+                <a class="text-success" href="#!" target="_blank">sales agreement</a>. I understand that this contract
+                will automatically renew every 12 months unless I cancel it before the renewal date. If I cancel early
+                before the end of the 12-month period, I acknowledge my obligation to pay the remaining balance of the
+                contract term, and I agree that Sapiengraph may bill me for this amount. I have read and understood
+                these terms.
+              </p>
+
+            </div>
+
+          </div>
 
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">No, cancel
-            top-up</button>
-          <button type="button" class="btn btn-primary">Yes, top up $100</button>
+          <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">
+            No, I don't want 50% OFF discount
+          </button>
+          <button type="button" class="btn btn-success">
+            Yes, enabled the 12 months contract
+          </button>
         </div>
 
       </div>
@@ -384,7 +365,7 @@
             <div class="card-body">
 
               <!--Plan-->
-              <div class="row align-items-top border-bottom py-4">
+              <div class="row align-items-top border-bottom py-4 mb-4">
 
                 <div class="col-12 col-md-6">
                   <h4>
@@ -412,9 +393,12 @@
 
                 </div>
 
-                <div class="col-12" id="12ContractToggle">
+                <div class="border-bottom mt-4 mb-4"></div>
+
+                <div class="col-12">
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" role="switch" id="toggle12Contract">
+                    <input class="form-check-input" type="checkbox" role="switch" value="" id="toggle12Contract"
+                      data-bs-toggle="modal" data-bs-target="#modal12">
                     <label class="form-check-label" for="toggle12Contract">
                       Enable 12 months contract for the same plan and get <span
                         class="fw-bold text-success border-bottom border-success">50% OFF discount</span>.
@@ -611,7 +595,7 @@
   </div> <!-- / .main-content -->
 
   <!-- JAVASCRIPT -->
-  
+
   <!-- Map JS -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 

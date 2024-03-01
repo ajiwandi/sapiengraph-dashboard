@@ -75,20 +75,3 @@ function updatePricing(plan) {
   proPlusPrice.textContent = proPlus;
   bizPrice.textContent = business;
 }
-
-// Upgrade modal contract checkbox
-const twelveContractCheckbox = document.getElementById('flexCheckChecked');
-const noTwelveContractCheckbox = document.getElementById('no12ContractCheckbox');
-
-twelveContractCheckbox.addEventListener('change', function () {
-  if (this.checked) {
-    noTwelveContractCheckbox.style.display = 'none';
-  } else {
-    noTwelveContractCheckbox.style.display = 'block';
-  }
-});
-
-// Initial check to hide 'no12ContractCheckbox' if '12ContractCheckbox' is checked by default
-if (twelveContractCheckbox.checked) {
-  noTwelveContractCheckbox.style.display = 'none';
-}
