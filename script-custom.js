@@ -1,3 +1,9 @@
+// Initialize tooltip
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+
 // Pricing data
 const pricing = {
   monthly: { lite: '$49', pro: '$299', proPlus: '$899', business: '$1899' },
