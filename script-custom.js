@@ -81,3 +81,12 @@ function updatePricing(plan) {
   proPlusPrice.textContent = proPlus;
   bizPrice.textContent = business;
 }
+
+function handleCheckbox(clickedCheckbox) {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach(checkbox => {
+    if (checkbox !== clickedCheckbox) {
+      checkbox.checked = false;
+    }
+  });
+}
