@@ -27,6 +27,208 @@
 
 <body>
 
+  <!--MODAL 12 MONTH CONTRACT CONFIRMATION-->
+  <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h3 class="modal-title">
+            Do you want to get 50% off by enrolling into a 12-month contract?
+          </h3>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center">
+
+            <div class="col-12">
+
+              <p class="text-muted mb-0">
+                I agree to a 12-month service contract with Sapiengraph as detailed in the
+                <a class="text-success" href="#!" target="_blank">sales agreement</a>. I understand that this contract
+                will automatically renew every 12 months unless I cancel it before the renewal date. If I cancel early
+                before the end of the 12-month period, I acknowledge my obligation to pay the remaining balance of the
+                contract term, and I agree that Sapiengraph may bill me for this amount. I have read and understood
+                these terms.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">
+            I do not want to enroll into a 12-month contract
+          </button>
+          <button type="button" class="btn btn-success">
+            Enroll me into 12-month contract and get 50% off
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL CANCEL-->
+  <div class="modal fade" id="modalCancel" aria-labelledby="modalCancelLabel" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4" data-dismiss="modal" aria-label="Close">
+        </a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-9 text-center mb-4">
+              <i class="neu-so-faq text-success display-1"></i>
+
+              <h1 class="fw-bold mb-3 mt-4">
+                Cancel your subscription plan?
+              </h1>
+
+              <p class="mb-4 text-gray-700 fs-lg">
+                We’re sorry to see you go. Would you tell us why?
+              </p>
+            </div>
+
+            <div class="col-12 col-md-8">
+
+              <!--Radio button-->
+              <div class="mb-5">
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel1">
+                  <label class="form-check-label" for="radioCancel1">
+                    Too many bugs or technical issue
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel2">
+                  <label class="form-check-label" for="radioCancel2">
+                    Could not get the data I needed
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel3">
+                  <label class="form-check-label" for="radioCancel3">
+                    Price too expensive
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel4">
+                  <label class="form-check-label" for="radioCancel4">
+                    Temporarily taking a break or plan to return
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel5">
+                  <label class="form-check-label" for="radioCancel5">
+                    Financial issue
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel6">
+                  <label class="form-check-label" for="radioCancel6">
+                    Don't need the tool
+                  </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="radio" name="radioCancel" id="radioCancel7">
+                  <label class="form-check-label" for="radioCancel7">
+                    Other
+                  </label>
+                  <textarea class="form-control mt-2" placeholder="Tell us why" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                </div>
+              </div>
+
+              <div class="row align-items-center">
+
+                <div class="col-12 col-md-6 text-center">
+                  <a type="button" class="mt-4 text-success" data-bs-dismiss="modal">
+                    Don't cancel
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <button class="btn btn-success w-100 mt-4" data-bs-target="#modalCancelNext" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
+                    Next
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL CANCEL 2-->
+  <div class="modal fade" id="modalCancelNext" aria-labelledby="modalCancelNextLabel" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <a type="button" class="btn-close h1 ps-4 pt-4" data-bs-dismiss="modal" aria-label="Close">
+        </a>
+
+        <div class="modal-body">
+
+          <div class="row justify-content-center pb-md-5">
+
+            <div class="col-12 col-md-9 text-center mb-4">
+              <i class="neu-so-faq text-success display-1"></i>
+            </div>
+
+            <div class="col-12 col-md-9 text-center">
+
+              <h1 class="fw-bold">
+                Cancel your subscription plan?
+              </h1>
+
+              <p class="mb-4 lead">
+                Pressing the "Yes, continue" button will cancel your current plan. Are you sure want to cancel your
+                Sapiengraph subscription?<br>
+                <br>
+                Your existing plan will stay active<br>
+                <span class="fw-bold">until 31 December 2023</span>.
+              </p>
+
+              <div class="row align-items-center">
+
+                <div class="col-12 col-md-6">
+                  <a type="button" class="mt-4 text-success" data-bs-dismiss="modal">
+                    Don't cancel
+                  </a>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <a class="btn btn-lg btn-success w-100 mt-4" href="account-plans-and-payments-cancel-success.html">
+                    Yes, continue
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <!-- NAVIGATION -->
   <nav class="navbar navbar-vertical fixed-start navbar-expand-md navbar-light mb-md-4" id="sidebar">
     <div class="container-fluid">
@@ -250,51 +452,6 @@
     </div>
   </nav>
 
-  <!--MODAL 12 MONTH CONTRACT CONFIRMATION-->
-  <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modal12Label" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-
-        <div class="modal-header">
-          <h3 class="modal-title">
-            Do you want to get 50% off by enrolling into a 12-month contract?
-          </h3>
-        </div>
-
-        <div class="modal-body">
-
-          <div class="row justify-content-center">
-
-            <div class="col-12">
-
-              <p class="text-muted mb-0">
-                I agree to a 12-month service contract with Sapiengraph as detailed in the
-                <a class="text-success" href="#!" target="_blank">sales agreement</a>. I understand that this contract
-                will automatically renew every 12 months unless I cancel it before the renewal date. If I cancel early
-                before the end of the 12-month period, I acknowledge my obligation to pay the remaining balance of the
-                contract term, and I agree that Sapiengraph may bill me for this amount. I have read and understood
-                these terms.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary me-2" data-bs-dismiss="modal">
-            I do not want to enroll into a 12-month contract
-          </button>
-          <button type="button" class="btn btn-success">
-            Enroll me into 12-month contract and get 50% off
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
   <!-- MAIN CONTENT -->
   <div class="main-content">
 
@@ -385,10 +542,14 @@
 
                 </div>
 
-                <div class="col-12 col-md-6 text-end">
+                <div class="col-12 col-md-6 text-md-end">
 
                   <a href="index.html" class="btn btn-outline-dark">
                     Change plan
+                  </a>
+
+                  <a class="text-muted d-block mt-3" type="submit" data-bs-toggle="modal" data-bs-target="#modalCancel">
+                    Cancel plan
                   </a>
 
                 </div>
