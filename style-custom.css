@@ -71,6 +71,13 @@
     }   
 }
 
+@media (min-width: 1500px) {
+    .main-content-prospector {
+        flex: 0 0 auto;
+        width: 100%;
+    }   
+}
+
 .dropdown-menu-center{
     right: auto !important;
     left: 50% !important;
@@ -114,3 +121,18 @@ td
     background: #03d97e !important;
   color: #fff;
 }
+
+.nav-pills .nav-item .nav-link.active-success {
+    background-color: #42BA96; /* Bootstrap's success color */
+    color: #fff; /* Text color for active link */
+    border-radius: 50px; /* Rounded corners */
+  }
+  
+  .nav-pills .nav-item .nav-link.active-success:hover {
+    background-color: #389E7F; /* Bootstrap's success color with darker shade */
+    color: #fff !important;
+  }
+  
+  .custom-link:hover{
+    color: #42BA96 !important;
+  }
