@@ -99,12 +99,6 @@ td,th {
     
 }
 
-td 
-{
-    height: 80px; 
-    width: 100px;
-}
-
 .accordion-button:not(.collapsed) {
     color: black;
     background-color: #edf2f8;
@@ -134,23 +128,6 @@ td
   }
   
   .custom-link:hover{
-    color: #42BA96 !important;
-  }
-
-  .custom-table th,
-  .custom-table td {
-    padding-left: 1.3rem !important;
-    padding-top: 1.2rem !important;
-    padding-bottom: 1rem !important;
+    color: #22C55D !important;
   }
   
-  .custom-table thead th {
-    vertical-align: middle !important; /* Align content vertically to the middle */
-    padding-top: 0.8rem !important; /* Adjust padding as needed */
-    padding-bottom: 0.8rem !important;
-    padding-right: 0.8rem !important;
-    font-weight: 900 !important;
-    line-height: 1.1rem !important;
-    text-wrap: nowrap !important;
-  
-  }
