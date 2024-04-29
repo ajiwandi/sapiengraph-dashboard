@@ -312,8 +312,8 @@
   
           <div class="row">
 
-            <!-- FILTER Mobile-tablet -->
-            <div class="col-12 mb-2 mb-lg-0 d-block d-lg-none">
+            <!-- FILTER-->
+            <div class="col-12 col-lg-12 col-xl-4 mb-2 mb-lg-0">
               <div class="card card-body custom-rounded shadow-light border">
                 <div class="d-flex align-items-center mb-n2">
                   <div class="font-weight-bold h3 mt-n2"><span class="mr-1">Filter Criteria</span>
@@ -327,91 +327,77 @@
                 <!-- OVERVIEW/filter-->
                 <div class="accordion" id="peopleOverviewAccordion">
                   <div class="card border-0">
-            
-                    <!-- list group-->
-                    <div class="list-group">
-            
-                      <!-- list group item 1-->
-                      <div class="list-group-item pb-0">
-            
-                        <!-- toggle-->
-                        <a class="d-flex align-items-center text-reset text-decoration-none mb-3" data-bs-toggle="collapse"
-                          href="#peopleOverview" role="button" aria-expanded="false" aria-controls="peopleOverview">
-                          <div class=" font-weight-bold lead me-auto"><i class="fe fe-zap me-3"></i>Overview</div>
-                          <!-- chevron-->
-                          <span class="collapse-chevron text-muted ms-4 mb-n3">
-                            <i class="fe fe-lg fe-chevron-down"></i>
-                          </span>
-                        </a>
-            
-                        <!-- collapse-->
-                        <div class="collapse mb-4" id="peopleOverview" data-bs-parent="#peopleOverviewAccordion">
-                          <div class="card-body bg-lighter border rounded">
-                            <form>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Current company</label>
-                                <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft"
-                                  id="exampleInputCompany" aria-describedby="emailHelp">
-                                  <div class="mt-2">
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> IBM <i
-                                        class="neu neu-so-close-circle ms-1"></i></div>
-                                    <div class="btn rounded-pill btn-sm btn-outline-success ps-3 mt-2"> Netflix <i
-                                        class="neu neu-so-close-circle ms-1"></i></div>
-                                  </div>
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Name</label>
-                                <input type="text" class="form-control form-control-sm" placeholder="Bill Gates, Jeff Bezos"
-                                  id="exampleInputCompany" aria-describedby="emailHelp">
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Job Title</label>
-                                <input type="text" class="form-control form-control-sm"
-                                  placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
-                                  aria-describedby="emailHelp">
-                                  <div class="mt-3">
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3"> Software Engineer <i
-                                        class="neu neu-so-close-circle ms-1"></i></div>
-                                  </div>
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Past company</label>
-                                <input type="text" class="form-control form-control-sm" placeholder="E.g. Google, IBM, Twitter"
-                                  id="exampleInputCompany" aria-describedby="emailHelp">
-                                  <div class="mt-2">
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Apple <i class="neu neu-so-close-circle ms-1"></i>
-                                    </div>
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Google <i class="neu neu-so-close-circle ms-1"></i>
-                                    </div>
-                                    <div class="btn rounded-pill btn-sm btn-outline-success ps-3 mt-2"> Amazon <i class="neu neu-so-close-circle ms-1"></i>
-                                    </div>
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Twitter <i class="neu neu-so-close-circle ms-1"></i>
-                                    </div>
-                                    <div class="btn rounded-pill btn-sm btn-outline-success ps-3 mt-2"> Facebook <i class="neu neu-so-close-circle ms-1"></i>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Location</label>
-                                <input type="text" class="form-control form-control-sm"
-                                  placeholder="E.g. United States, San Francisco, London" id="exampleInputCompany"
-                                  aria-describedby="emailHelp">
-                              </div>
-                              <div class="mb-3">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Past School</label>
-                                <input type="text" class="form-control form-control-sm"
-                                  placeholder="E.g. University of Oxford, Cambridge University" id="exampleInputCompany"
-                                  aria-describedby="emailHelp">
-                                  <div class="mt-3">
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3"> 
-                                      Massachusetts Institute of Technology <i
-                                        class="neu neu-so-close-circle ms-1"></i></div>
-                                  </div>
-                              </div>
-                            </form>
+                    <!-- collapse-->
+                    <div class="collapse show" id="peopleOverview" data-bs-parent="#peopleOverviewAccordion">
+                      <div class="card-body bg-lighter border rounded">
+                        <form>
+                          <div class="mb-4">
+                            <label for="exampleInputCompany" class="form-label font-weight-bold">Current company</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft"
+                              id="exampleInputCompany" aria-describedby="emailHelp">
+                            <div class="mt-2">
+                              <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> IBM <i
+                                  class="neu neu-so-close-circle ms-1"></i></div>
+                              <div class="btn rounded-pill btn-sm btn-outline-success ps-3 mt-2"> Netflix <i
+                                  class="neu neu-so-close-circle ms-1"></i></div>
+                            </div>
                           </div>
-                        </div>
+                          <div class="mb-4">
+                            <label for="exampleInputCompany" class="form-label font-weight-bold">Name</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="Bill Gates, Jeff Bezos"
+                              id="exampleInputCompany" aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-4">
+                            <label for="exampleInputCompany" class="form-label font-weight-bold">Job Title</label>
+                            <input type="text" class="form-control form-control-sm"
+                              placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
+                              aria-describedby="emailHelp">
+                            <div class="mt-3">
+                              <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3"> Software Engineer <i
+                                  class="neu neu-so-close-circle ms-1"></i></div>
+                            </div>
+                          </div>
+                          <div class="mb-4">
+                            <label for="exampleInputCompany" class="form-label font-weight-bold">Past company</label>
+                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Google, IBM, Twitter"
+                              id="exampleInputCompany" aria-describedby="emailHelp">
+                            <div class="mt-2">
+                              <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Apple <i
+                                  class="neu neu-so-close-circle ms-1"></i>
+                              </div>
+                              <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Google <i
+                                  class="neu neu-so-close-circle ms-1"></i>
+                              </div>
+                              <div class="btn rounded-pill btn-sm btn-outline-success ps-3 mt-2"> Amazon <i
+                                  class="neu neu-so-close-circle ms-1"></i>
+                              </div>
+                              <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Twitter <i
+                                  class="neu neu-so-close-circle ms-1"></i>
+                              </div>
+                              <div class="btn rounded-pill btn-sm btn-outline-success ps-3 mt-2"> Facebook <i
+                                  class="neu neu-so-close-circle ms-1"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-4">
+                            <label for="exampleInputCompany" class="form-label font-weight-bold">Location</label>
+                            <input type="text" class="form-control form-control-sm"
+                              placeholder="E.g. United States, San Francisco, London" id="exampleInputCompany"
+                              aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-2">
+                            <label for="exampleInputCompany" class="form-label font-weight-bold">Past School</label>
+                            <input type="text" class="form-control form-control-sm"
+                              placeholder="E.g. University of Oxford, Cambridge University" id="exampleInputCompany"
+                              aria-describedby="emailHelp">
+                            <div class="mt-3">
+                              <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3">
+                                Cambridge University <i class="neu neu-so-close-circle ms-1"></i></div>
+                            </div>
+                          </div>
+                        </form>
                       </div>
+                
                     </div>
                   </div>
                 </div>
@@ -419,42 +405,18 @@
                 <div class="btn btn-success rounded-pill btn-block"><i class="neu neu-search"></i> Search criteria</div>
               </div>
             </div>
-
-            <!-- FILTER-->
-            <div class="col-12 col-lg-2 col-xl-1 mb-2 mb-lg-0 d-none d-lg-block">
-              <div class="card custom-rounded shadow-light border">
-                <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                  <div class="pb-4 border-bottom">
-                    <button class="btn btn-sm btn-success rounded-pill lift font-weight-bold ms-auto d-none d-lg-block"><i
-                        class="fe fe-chevron-right"></i></button>
-                  </div>
-
-            
-                  <!-- OVERVIEW/filter-->
-                  <div class="mt-4 text-center">
-            
-                    <!-- toggle-->
-                    <a class="d-flex align-items-center justify-content-center text-reset text-decoration-none mb-3 custom-link"
-                      data-bs-toggle="collapse" href="#peopleOverview" role="button" aria-expanded="false"
-                      aria-controls="peopleOverview">
-                      <div class=" font-weight-bold lead me-auto"><i class="fe fe-zap ms-0"></i></div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
   
             <!-- RESULT-->
-            <div class="col-lg-10 col-xl-11">
+            <div class="col-lg-12 col-xl-8">
               <div class="card card-body custom-rounded bg-white text-left shadow-light border">
               
                 <div class="row mb-3">
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-lg-5">
                     <p class="font-weight-bold mt-2"><i class="neu neu-so-structure me-1 text-success"></i>2,345,678 <span
                         class="font-weight-normal text-muted">results found</span></p>
                   </div>
-                  <div class="col-12 col-md-6 d-none d-md-flex justify-content-md-end">
-                    <div class="font-weight-bold text-muted small text-right">Displaying
+                  <div class="col-12 col-lg-7 d-flex justify-content-lg-end mt-1">
+                    <div class="font-weight-bold text-muted small text-right me-2">Displaying
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm rounded-pill px-3 btn-outline-secondary dropdown-toggle ms-1"
                           data-bs-toggle="dropdown" aria-expanded="false">
@@ -464,6 +426,18 @@
                           <a class="dropdown-item nav-link custom-link text-gray-700" href="#">15 results</a>
                           <a class="dropdown-item nav-link custom-link text-gray-700" href="#">20 results</a>
                           <a class="dropdown-item nav-link custom-link text-gray-700" href="#">25 results</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="font-weight-bold text-muted small text-right">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm rounded-pill px-3 btn-outline-success dropdown-toggle ms-1"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Export to .CSV
+                        </button>
+                        <div class="dropdown-menu me-3">
+                          <a class="dropdown-item nav-link custom-link text-gray-700" href="#">Export to .CSV</a>
+                          <a class="dropdown-item nav-link custom-link text-gray-700" href="#">Export to .XLSX</a>
                         </div>
                       </div>
                     </div>
@@ -502,7 +476,7 @@
                               <img class="avatar-img rounded-circle" src="assets/img/photos/bill gates photo.jpeg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">B*** G****</div>
+                            <div class="ms-3">Bill Gates</div>
                           </div>
                         </td>
                         <td class="align-middle">12,345,678</td>
@@ -511,12 +485,12 @@
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/Microsoft.svg" alt="company logo">
                             </div>
-                            <div class="ms-3">*********</div>
+                            <div class="ms-3">Microsoft</div>
                           </div>
                         </td>
                         <td class="align-middle">Founder</td>
-                        <td class="align-middle">** *** *** ****</td>
-                        <td class="align-middle">***************</td>
+                        <td class="align-middle">+1 555 123 1234</td>
+                        <td class="align-middle">bill.gates@gatesfoundation.org</td>
                         <td class="align-middle"> <!-- Add your button here -->
                           <button class="btn btn-sm rounded-pill btn-outline-success"><i class="neu neu-so-lock-square"></i> Unlock
                             this
@@ -535,7 +509,7 @@
                             <div class="avatar avatar-xs">
                               <img class="avatar-img rounded-circle" src="assets/img/photos/bezos.png" alt="person picture">
                             </div>
-                            <div class="ms-3">J*** B****</div>
+                            <div class="ms-3">Jeff Bezos</div>
                           </div>
                         </td>
                         <td class="align-middle">8,912,345</td>
@@ -544,12 +518,12 @@
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/Amazon logo.jpeg" alt="company logo">
                             </div>
-                            <div class="ms-3">******</div>
+                            <div class="ms-3">Amazon</div>
                           </div>
                         </td>
                         <td class="align-middle">CEO</td>
-                        <td class="align-middle">** *** *** ****</td>
-                        <td class="align-middle">*************</td>
+                        <td class="align-middle">+1 555 123 1234</td>
+                        <td class="align-middle">jeff@amazon.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
                           <button class="btn btn-sm rounded-pill btn-outline-success"><i class="neu neu-so-lock-square"></i> Unlock
                             this
@@ -603,7 +577,7 @@
                               <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-5.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">K****** R***</div>
+                            <div class="ms-3">Kokoro Rose</div>
                           </div>
                         </td>
                         <td class="align-middle">4,567,891</td>
@@ -612,12 +586,12 @@
                             <div class="avatar avatar-xs">
                               <img class="img" width="22" height="auto" src="assets/img/logo/netflix.jpeg" alt="company logo">
                             </div>
-                            <div class="ms-3">*******</div>
+                            <div class="ms-3">Netflix</div>
                           </div>
                         </td>
                         <td class="align-middle">Marketing Specialist</td>
                         <td class="align-middle">None found</td>
-                        <td class="align-middle">***********</td>
+                        <td class="align-middle">kokorose@netflix.com</td>
                         <td class="align-middle"> <!-- Add your button here -->
                           <button class="btn btn-sm rounded-pill btn-outline-success"><i class="neu neu-so-lock-square"></i> Unlock
                             this
@@ -668,24 +642,24 @@
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/photos/bill gates photo.jpeg"
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-4.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">B*** G****</div>
+                            <div class="ms-3">J*** M***</div>
                           </div>
                         </td>
-                        <td class="align-middle">12,345,678</td>
+                        <td class="align-middle">2,345,678</td>
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Microsoft.svg" alt="company logo">
+                              <img class="img" width="22" height="auto" src="assets/img/logo/Spotify logo.svg" alt="company logo">
                             </div>
-                            <div class="ms-3">*********</div>
+                            <div class="ms-3">*******</div>
                           </div>
                         </td>
-                        <td class="align-middle">Founder</td>
+                        <td class="align-middle">CEO</td>
                         <td class="align-middle">** *** *** ****</td>
-                        <td class="align-middle">***************</td>
+                        <td class="align-middle">*************</td>
                         <td class="align-middle"> <!-- Add your button here -->
                           <button class="btn btn-sm rounded-pill btn-outline-success"><i class="neu neu-so-lock-square"></i> Unlock
                             this
@@ -702,23 +676,23 @@
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/photos/bezos.png" alt="person picture">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-6.jpg" alt="person picture">
                             </div>
-                            <div class="ms-3">J*** B****</div>
+                            <div class="ms-3">A*** R**</div>
                           </div>
                         </td>
-                        <td class="align-middle">8,912,345</td>
+                        <td class="align-middle">912,345</td>
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/Amazon logo.jpeg" alt="company logo">
+                              <img class="img" width="22" height="auto" src="assets/img/logo/Apple 14.svg" alt="company logo">
                             </div>
-                            <div class="ms-3">******</div>
+                            <div class="ms-3">*****</div>
                           </div>
                         </td>
-                        <td class="align-middle">CEO</td>
-                        <td class="align-middle">** *** *** ****</td>
-                        <td class="align-middle">*************</td>
+                        <td class="align-middle">Senior Designer</td>
+                        <td class="align-middle">None found</td>
+                        <td class="align-middle">**************</td>
                         <td class="align-middle"> <!-- Add your button here -->
                           <button class="btn btn-sm rounded-pill btn-outline-success"><i class="neu neu-so-lock-square"></i> Unlock
                             this
@@ -735,13 +709,13 @@
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-2.jpg"
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-8.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">D**** K***</div>
+                            <div class="ms-3">M*** J***</div>
                           </div>
                         </td>
-                        <td class="align-middle">567,891</td>
+                        <td class="align-middle">678,910</td>
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
@@ -750,7 +724,7 @@
                             <div class="ms-3">***</div>
                           </div>
                         </td>
-                        <td class="align-middle">Software Engineer</td>
+                        <td class="align-middle">Marketing Specialist</td>
                         <td class="align-middle">** *** *** ****</td>
                         <td class="align-middle">*****************</td>
                         <td class="align-middle"> <!-- Add your button here -->
@@ -769,22 +743,22 @@
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-5.jpg"
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-1.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">K****** R***</div>
+                            <div class="ms-3">S**** G****</div>
                           </div>
                         </td>
                         <td class="align-middle">4,567,891</td>
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
-                              <img class="img" width="22" height="auto" src="assets/img/logo/netflix.jpeg" alt="company logo">
+                              <img class="img" width="22" height="auto" src="assets/img/logo/Air.svg" alt="company logo">
                             </div>
                             <div class="ms-3">*******</div>
                           </div>
                         </td>
-                        <td class="align-middle">Marketing Specialist</td>
+                        <td class="align-middle">Strategic Partner</td>
                         <td class="align-middle">None found</td>
                         <td class="align-middle">***********</td>
                         <td class="align-middle"> <!-- Add your button here -->
@@ -803,10 +777,10 @@
                         <td class="align-middle">
                           <div class="d-flex">
                             <div class="avatar avatar-xs">
-                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-3.jpg"
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-7.jpg"
                                 alt="person picture">
                             </div>
-                            <div class="ms-3">K**** P***</div>
+                            <div class="ms-3">J*** D**</div>
                           </div>
                         </td>
                         <td class="align-middle">891,234</td>
@@ -818,7 +792,7 @@
                             <div class="ms-3">******</div>
                           </div>
                         </td>
-                        <td class="align-middle">CTO</td>
+                        <td class="align-middle">Senior Software Engineer</td>
                         <td class="align-middle">** *** *** ****</td>
                         <td class="align-middle">None found</td>
                         <td class="align-middle"> <!-- Add your button here -->
@@ -832,8 +806,7 @@
                 </div>
               
                 <div class="row border-top pt-4">
-                  <div
-                    class="col-12 col-md-12 col-lg-12 col-xl-9 mb-4 mb-xl-3 d-lg-flex justify-content-md-center justify-content-xl-start">
+                  <div class="col-12 col-md-12 col-lg-12 mb-4 d-lg-flex justify-content-md-center border-bottom pb-4">
                     <!---->
                     <button class="btn btn-success btn rounded-pill me-3 mb-3 mb-lg-0 lift d-none d-lg-block text-nowrap"><i
                         class="neu neu-so-lock-square"></i> Unlock all results</button>
@@ -853,9 +826,9 @@
                     <button class="btn btn-outline-success w-100 rounded-pill btn-block btn-pill lift mb-3 mb-lg-0 d-lg-none"><i
                         class="neu neu-todo-done"></i> Unlock 3 selected row</button>
                   </div>
-                  <div class="col-12 col-lg-12 col-xl-3">
+                  <div class="col-12 col-lg-12 col-xl-12">
                     <nav aria-label="pagination">
-                      <ul class="pagination pagination justify-content-center justify-content-xl-end">
+                      <ul class="pagination pagination justify-content-center mb-0">
                         <li class="page-item disabled">
                           <a class="page-link" href="#" tabindex="-1">Previous</a>
                         </li>

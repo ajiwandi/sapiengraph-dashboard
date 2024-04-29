@@ -325,9 +325,24 @@
                 <div class="accordion" id="peopleOverviewAccordion">
                   <div class="card border-0">
             
+                    <!-- list group-->
+                    <div class="list-group">
+            
+                      <!-- list group item 1-->
+                      <div class="list-group-item pb-0">
+            
+                        <!-- toggle-->
+                        <a class="d-flex align-items-center text-reset text-decoration-none mb-3" data-bs-toggle="collapse"
+                          href="#peopleOverview" role="button" aria-expanded="false" aria-controls="peopleOverview">
+                          <div class=" font-weight-bold lead me-auto"><i class="fe fe-zap me-3"></i>Overview</div>
+                          <!-- chevron-->
+                          <span class="collapse-chevron text-muted ms-4 mb-n3">
+                            <i class="fe fe-lg fe-chevron-down"></i>
+                          </span>
+                        </a>
             
                         <!-- collapse-->
-                        <div class="collapse show" id="peopleOverview" data-bs-parent="#peopleOverviewAccordion">
+                        <div class="collapse show mb-4" id="peopleOverview" data-bs-parent="#peopleOverviewAccordion">
                           <div class="card-body bg-lighter border rounded">
                             <form>
                               <div class="mb-4">
@@ -357,7 +372,7 @@
                                   placeholder="E.g. United States, San Francisco, London" id="exampleInputCompany"
                                   aria-describedby="emailHelp">
                               </div>
-                              <div>
+                              <div class="mb-3">
                                 <label for="exampleInputCompany" class="form-label font-weight-bold">Past School</label>
                                 <input type="text" class="form-control form-control-sm"
                                   placeholder="E.g. University of Oxford, Cambridge University" id="exampleInputCompany"
@@ -367,7 +382,8 @@
                           </div>
                         </div>
                       </div>
-
+                    </div>
+                  </div>
                 </div>
             
                 <div class="btn btn-success rounded-pill btn-block disabled"><i class="neu neu-search"></i> Search criteria</div>

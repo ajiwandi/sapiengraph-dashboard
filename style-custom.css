@@ -131,3 +131,11 @@ td,th {
     color: #22C55D !important;
   }
   
+  .with-divider::after {
+    content: '';
+    border-right: 1px solid #ccc !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -1px;
+  }
