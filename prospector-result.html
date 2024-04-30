@@ -415,10 +415,13 @@
                     <p class="font-weight-bold mt-2"><i class="neu neu-so-structure me-1 text-success"></i>2,345,678 <span
                         class="font-weight-normal text-muted">results found</span></p>
                   </div>
-                  <div class="col-12 col-lg-7 d-flex justify-content-lg-end mt-1">
-                    <div class="font-weight-bold text-muted small text-right me-2">Displaying
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm rounded-pill px-3 btn-outline-secondary dropdown-toggle ms-1"
+                  <div class="col-12 col-lg-7 d-md-flex justify-content-lg-end mt-4 mt-md-1">
+                    <div class="font-weight-bold text-muted small text-right me-md-2 mb-3 mb-md-0 mt-n3 d-flex align-items-center">
+                      <!-- Added d-flex and align-items-center -->
+                      <span class="flex-grow-1">Displaying</span> <!-- Displaying text with flex-grow-1 -->
+                      <div class="btn-group ms-3 ms-md-2 w-100"> <!-- Button group -->
+                        <button type="button"
+                          class="btn btn-sm rounded-pill px-3 btn-outline-secondary dropdown-toggle btn-mobile-full-width"
                           data-bs-toggle="dropdown" aria-expanded="false">
                           10 results
                         </button>
@@ -429,8 +432,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="font-weight-bold text-muted small text-right">
-                      <div class="btn-group">
+                    <div class="font-weight-bold text-muted small text-right mb-3 mb-md-0">
+                      <div class="btn-group w-100">
                         <button type="button" class="btn btn-sm rounded-pill px-3 btn-outline-success dropdown-toggle ms-1"
                           data-bs-toggle="dropdown" aria-expanded="false">
                           Export to .CSV
