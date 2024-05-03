@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/neuicons@1.9.0/css/neu.min.css">
     
     <!-- Title -->
-    <title>Loading - Sapiengraph Prospector - Dashboard</title>
+    <title>Companies - Sapiengraph Prospector - Dashboard</title>
     <style>
 
       th.active-header {
@@ -197,7 +197,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold text-success" href="prospector-loading.html">
+            <a class="nav-link fw-bold text-success" href="prospector.html">
               <i class="fe fe-target"></i> Prospector
             </a>
           </li>
@@ -276,7 +276,7 @@
     
                     <!-- Title -->
                     <h1 class="header-title">
-                      Person Prospector
+                      Companies Prospector
                     </h1>
     
                   </div>
@@ -288,156 +288,108 @@
                 </div> <!-- / .row -->
               </div>
             </div>
-    
-    
+            
+            
             <!-- NAVS-->
             <div class="col-12 mb-3">
               <div class="card card-body custom-rounded border py-3">
                 <ul class="nav">
                   <li class="nav-item text-left text-md-center">
-                    <a class="nav-link text-muted custom-link" href="#"><i class="neu neu-bookmark"></i> Saved</a>
+                    <a class="nav-link text-muted custom-link" href="prospector-saved.html"><i class="neu neu-bookmark"></i>
+                      Saved</a>
                   </li>
                   <li class="nav-item text-left text-md-center">
-                    <a class="nav-link active text-success font-weight-bold custom-link" href="#"><i class="neu neu-user-2"></i>
+                    <a class="nav-link text-muted custom-link" href="prospector.html"><i class="neu neu-user-2"></i>
                       People</a>
                   </li>
                   <li class="nav-item text-left text-md-center">
-                    <a class="nav-link text-muted custom-link" href="#"><i class="neu neu-company"></i> Companies</a>
+                    <a class="nav-link text-success custom-link" href="prospector-companies.html"><i
+                        class="neu neu-company"></i> Companies</a>
                   </li>
                   <li class="nav-item text-left text-md-center">
-                    <a class="nav-link text-muted custom-link" href="#"><i class="neu neu-groups"></i> Customers</a>
+                    <a class="nav-link text-muted custom-link" href="prospector-customers.html"><i
+                        class="neu neu-groups"></i> Customers</a>
                   </li>
                 </ul>
               </div>
             </div>
             
             <div class="row">
-            <!-- FILTER-->
-            <div class="col-12 col-lg-7 col-xl-4 mb-2 mb-lg-0">
-              <div class="card card-body custom-rounded shadow-light border">
-                <div class="d-flex align-items-center mb-n2">
-                  <div class="font-weight-bold h3 mt-n2"><span class="mr-1">Filter Criteria</span>
-                    <div class="btn btn-outline-success rounded-pill btn-sm font-weight-bold h3 mt-3 ms-2">Reset</div>
+              <!-- FILTER-->
+              <div class="col-12 col-lg-12 col-xl-4 mb-2 mb-lg-0">
+                <div class="card card-body custom-rounded shadow-light border">
+                  <div class="d-flex align-items-center mb-n2">
+                    <div class="font-weight-bold h3 mt-n2"><span class="mr-1">Filter Criteria</span>
+                      <div class="btn btn-outline-secondary disabled rounded-pill btn-sm font-weight-bold h3 mt-3 ms-2">Reset</div>
+                    </div>
+            
                   </div>
             
-                  <button class="btn btn-sm btn-success rounded-pill lift font-weight-bold ms-auto d-none d-lg-block mt-n4"><i
-                      class="fe fe-chevron-left"></i></button>
-                </div>
-            
-                <!-- OVERVIEW/filter-->
-                <div class="accordion" id="peopleOverviewAccordion">
-                  <div class="card border-0">
-            
-                    <!-- list group-->
-                    <div class="list-group">
-            
-                      <!-- list group item 1-->
-                      <div class="list-group-item pb-0">
-            
-                        <!-- toggle-->
-                        <a class="d-flex align-items-center text-reset text-decoration-none mb-3" data-bs-toggle="collapse"
-                          href="#peopleOverview" role="button" aria-expanded="false" aria-controls="peopleOverview">
-                          <div class=" font-weight-bold lead me-auto"><i class="fe fe-zap me-3"></i>Overview</div>
-                          <!-- chevron-->
-                          <span class="collapse-chevron text-muted ms-4 mb-n3">
-                            <i class="fe fe-lg fe-chevron-down"></i>
-                          </span>
-                        </a>
-            
-                        <!-- collapse-->
-                        <div class="collapse show mb-4" id="peopleOverview" data-bs-parent="#peopleOverviewAccordion">
-                          <div class="card-body bg-lighter border rounded">
-                            <form>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Current company</label>
-                                <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft"
-                                  id="exampleInputCompany" aria-describedby="emailHelp">
-                                  <div class="mt-2">
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> IBM <i
-                                        class="neu neu-so-close-circle ms-1"></i></div>
-                                    <div class="btn rounded-pill btn-sm btn-outline-success ps-3 mt-2"> Netflix <i
-                                        class="neu neu-so-close-circle ms-1"></i></div>
-                                  </div>
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Name</label>
-                                <input type="text" class="form-control form-control-sm" placeholder="Bill Gates, Jeff Bezos"
-                                  id="exampleInputCompany" aria-describedby="emailHelp">
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Job Title</label>
-                                <input type="text" class="form-control form-control-sm"
-                                  placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
-                                  aria-describedby="emailHelp">
-                                  <div class="mt-3">
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3"> Software Engineer <i
-                                        class="neu neu-so-close-circle ms-1"></i></div>
-                                  </div>
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Past company</label>
-                                <input type="text" class="form-control form-control-sm" placeholder="E.g. Google, IBM, Twitter"
-                                  id="exampleInputCompany" aria-describedby="emailHelp">
-                                  <div class="mt-2">
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Apple <i class="neu neu-so-close-circle ms-1"></i>
-                                    </div>
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Google <i class="neu neu-so-close-circle ms-1"></i>
-                                    </div>
-                                    <div class="btn rounded-pill btn-sm btn-outline-success ps-3 mt-2"> Amazon <i class="neu neu-so-close-circle ms-1"></i>
-                                    </div>
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Twitter <i class="neu neu-so-close-circle ms-1"></i>
-                                    </div>
-                                    <div class="btn rounded-pill btn-sm btn-outline-success ps-3 mt-2"> Facebook <i class="neu neu-so-close-circle ms-1"></i>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Location</label>
-                                <input type="text" class="form-control form-control-sm"
-                                  placeholder="E.g. United States, San Francisco, London" id="exampleInputCompany"
-                                  aria-describedby="emailHelp">
-                              </div>
-                              <div class="mb-3">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Past School</label>
-                                <input type="text" class="form-control form-control-sm"
-                                  placeholder="E.g. University of Oxford, Cambridge University" id="exampleInputCompany"
-                                  aria-describedby="emailHelp">
-                                  <div class="mt-3">
-                                    <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3"> 
-                                      Massachusetts Institute of Technology <i
-                                        class="neu neu-so-close-circle ms-1"></i></div>
-                                  </div>
-                              </div>
-                            </form>
-                          </div>
+                  <!-- OVERVIEW/filter-->
+                  <div class="accordion" id="peopleOverviewAccordion">
+                    <div class="card border-0">
+                      <!-- collapse-->
+                      <div class="collapse show" id="peopleOverview" data-bs-parent="#peopleOverviewAccordion">
+                        <div class="card-body bg-lighter border rounded">
+                          <form>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Industries</label>
+                              <input type="text" class="form-control form-control-sm"
+                                placeholder="E.g. Technology, Software, Entertainment" id="exampleInputCompany"
+                                aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Location</label>
+                              <input type="text" class="form-control form-control-sm"
+                                placeholder="E.g. United States, San Francisco, London" id="exampleInputCompany"
+                                aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Company Type</label>
+                              <input type="text" class="form-control form-control-sm"
+                                placeholder="E.g. Public Company, Non Profit, Privately Held" id="exampleInputCompany"
+                                aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-2">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Revenue</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. > $500M"
+                                id="exampleInputCompany" aria-describedby="emailHelp">
+                            </div>
+                          </form>
                         </div>
+            
                       </div>
                     </div>
                   </div>
+            
+                  <div class="btn btn-success disabled rounded-pill btn-block lift"><i class="neu neu-search"></i> Search criteria</div>
                 </div>
-            
-                <div class="btn btn-success rounded-pill btn-block"><i class="neu neu-search"></i> Search criteria</div>
               </div>
-            </div>
             
-            <!-- RESULT-->
-            <div class="col-12 col-lg-5 col-xl-8">
-              <div class="card custom-rounded bg-white text-center pb-lg-3">
-                <div class="card-body py-md-5 pb-md-6 pt-md-4">
-                  <div id="spinnerContainer" class="d-flex justify-content-center pt-6 pb-6 pt-md-8 pb-md-8">
-                    <div id="spinner1" class="spinner-grow text-success me-2 d-none" style="width: 2rem; height: 2rem;"
-                      role="status"></div>
-                    <div id="spinner2" class="spinner-grow text-success me-2 d-none" style="width: 2rem; height: 2rem;"
-                      role="status"></div>
-                    <div id="spinner3" class="spinner-grow text-success d-none" style="width: 2rem; height: 2rem;"
-                      role="status"></div>
+              <!-- RESULT-->
+              <div class="col-12 col-lg-12 col-xl-8">
+                <div class="card custom-rounded bg-white text-center pb-lg-3">
+                  <div class="card-body">
+                    <p class="pt-4 pt-lg-3 text-gray-400 d-none d-xl-block"><i class="fe fe-arrow-left me-2"></i> Filter and search
+                      your criteria to show the result</p>
+                    <div class="pt-4 pt-lg-3 text-gray-400 d-block d-xl-none"><i class="fe fe-arrow-up me-1"></i> <span
+                        class="mt-3">Filter and search your criteria to show the result</span></div>
+                    <div class="d-none d-xl-block">
+                      <img class="img-fluid mt-4 mb-5" style="max-width: 400px;" alt="Prospector search illustration"
+                        src="assets/img/illustrations/prospector-search.png">
+                    </div>
+                    <div class="d-none d-md-block d-xl-none">
+                      <img class="img-fluid mt-7 mb-7" style="max-width: 200px;" alt="Prospector search illustration"
+                        src="assets/img/illustrations/prospector-search.png">
+                    </div>
+                    <div class="d-flex justify-content-center d-block d-md-none">
+                      <img class="img-fluid mt-4" style="max-width: 100%;" alt="Prospector search illustration"
+                        src="assets/img/illustrations/prospector-search.png">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
-
-
 
             <br>
     
@@ -515,6 +467,7 @@
       }
     </script> 
 
+    <script src="script-custom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
   
@@ -527,21 +480,6 @@
     
     <!-- Theme JS -->
     <script src="./assets/js/theme.bundle.js"></script>
-
-    <!-- Spinner loading JS-->
-    <script>
-      // Function to show spinners with a delay
-      function showSpinnerWithDelay(spinnerId, delay) {
-        setTimeout(function() {
-          document.getElementById(spinnerId).classList.remove('d-none');
-        }, delay);
-      }
-    
-      // Call the function for each spinner with a specific delay
-      showSpinnerWithDelay('spinner1', 500); // Show spinner1 after 1 second
-      showSpinnerWithDelay('spinner2', 600); // Show spinner2 after 2 seconds
-      showSpinnerWithDelay('spinner3', 700); // Show spinner3 after 3 seconds
-    </script>
 
   </body>
 </html>
