@@ -162,3 +162,24 @@ td,th {
     text-overflow: ellipsis;
   }  
 }
+
+/* FOR SEARCH AUTOCOMPLETE */
+.suggestions {
+  position: absolute;
+  width: calc(100% - 3rem); /* Adjust width as needed */
+  z-index: 1000;
+  margin-top: 0.1rem;
+  background-color: white; /* Set background color */
+  border-radius: 0.25rem; /* Add border radius for a rounded look */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Add shadow for depth */
+}
+
+.suggestions .list-group-item {
+  cursor: pointer;
+}
+
+.suggestions .list-group-item:hover {
+  background-color: #F9FBFD; /* Change background color on hover */
+  color: #22C55D !important;
+}
+/* FOR SEARCH AUTOCOMPLETE */

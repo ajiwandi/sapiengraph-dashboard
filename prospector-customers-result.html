@@ -276,14 +276,9 @@
         
                       <!-- Title -->
                       <h1 class="header-title">
-                        Customers Prospector
+                        Customer Prospector
                       </h1>
         
-                    </div>
-                    <div class="text-end col-5">
-                      <div class="btn btn-sm btn-success rounded-pill mt-n3">
-                        <i class="neu neu-so-save"></i>Save search
-                      </div>
                     </div>
                   </div> <!-- / .row -->
                 </div>
@@ -316,13 +311,16 @@
                   <!-- FILTER-->
                   <div class="col-12 col-lg-12 col-xl-4 mb-2 mb-lg-0">
                     <div class="card card-body custom-rounded shadow-light border">
-                      <div class="d-flex align-items-center mb-n2">
+                      <div class="d-flex align-items-center mb-n2 me-n6 me-md-0">
                         <div class="font-weight-bold h3 mt-n2"><span class="mr-1">Filter Criteria</span>
-                          <a class="btn btn-outline-success rounded-pill btn-sm font-weight-bold h3 mt-3 ms-2" href="prospector-customers.html">Reset</a>
+                          <a class="btn btn-outline-success rounded-pill btn-sm font-weight-bold h3 mt-3 ms-3" href="prospector-customers.html">Reset</a>
+                          <a class="btn btn-link text-success rounded-pill btn-sm font-weight-bold h3 mt-3 ms-n1" href="prospector-customers.html"><i class="neu neu-so-save d-none d-md-inline-block"></i> Save search</a>                        
                         </div>
-              
+                        
+                        <div class="ms-auto">
                         <button class="btn btn-sm btn-success rounded-pill lift font-weight-bold ms-auto d-none d-xl-block mt-n4"><i
                             class="fe fe-chevron-left"></i></button>
+                        </div>    
                       </div>
               
                       <!-- OVERVIEW/filter-->
@@ -336,6 +334,7 @@
                                   <label for="exampleInputCompany" class="form-label font-weight-bold">Company Name</label>
                                   <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft"
                                     id="exampleInputCompany" aria-describedby="emailHelp">
+                                    <ul class="list-group suggestions" id="companySuggestions"></ul>  
                                   <div class="mt-2">
                                     <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Google <i
                                         class="neu neu-so-close-circle ms-1"></i></div>
@@ -447,7 +446,7 @@
                                   <div class="avatar avatar-xs">
                                     <img class="img" width="23" height="auto" src="assets/img/logo/adobe.svg" alt="company logo">
                                   </div>
-                                  <div class="ms-3 ">Adobe</div>
+                                  <div class="ms-3 ">*****</div>
                                 </a>
                               </td>
                               <td class="align-middle">**********************
@@ -521,7 +520,7 @@
                                   <div class="avatar avatar-xs">
                                     <img class="img" width="22" height="auto" src="assets/img/logo/Google-logoicon.svg" alt="company logo">
                                   </div>
-                                  <div class="ms-3 ">Google</div>
+                                  <div class="ms-3 ">******</div>
                                 </a>
                               </td>
                               <td class="align-middle">**********************
@@ -547,7 +546,7 @@
                                   <div class="avatar avatar-xs">
                                     <img class="img mt-2" width="22" height="auto" src="assets/img/logo/IBM logo.svg" alt="company logo">
                                   </div>
-                                  <div class="ms-3 ">IBM</div>
+                                  <div class="ms-3 ">****</div>
                                 </a>
                               </td>
                               <td class="align-middle">*******************
@@ -573,7 +572,7 @@
                                   <div class="avatar avatar-xs">
                                     <img class="img" width="22" height="auto" src="assets/img/logo/netflix.jpeg" alt="company logo">
                                   </div>
-                                  <div class="ms-3 ">Netflix</div>
+                                  <div class="ms-3 ">*******</div>
                                 </a>
                               </td>
                               <td class="align-middle">**********************
@@ -599,7 +598,7 @@
                                   <div class="avatar avatar-xs">
                                     <img class="img mt-n1" width="22" height="auto" src="assets/img/logo/Apple 14.svg" alt="company logo">
                                   </div>
-                                  <div class="ms-3 ">Apple</div>
+                                  <div class="ms-3 ">*****</div>
                                 </a>
                               </td>
                               <td class="align-middle">*********************
@@ -625,7 +624,7 @@
                                   <div class="avatar avatar-xs">
                                     <img class="img mt-2" width="23" height="auto" src="assets/img/logo/Meta 1.svg" alt="company logo">
                                   </div>
-                                  <div class="ms-3 ">Meta</div>
+                                  <div class="ms-3 ">****</div>
                                 </a>
                               </td>
                               <td class="align-middle">*******************
@@ -651,7 +650,7 @@
                                   <div class="avatar avatar-xs">
                                     <img class="img" width="22" height="auto" src="assets/img/logo/Air.svg" alt="company logo">
                                   </div>
-                                  <div class="ms-3 ">Airbnb</div>
+                                  <div class="ms-3 ">*******</div>
                                 </a>
                               </td>
                               <td class="align-middle">*********************
@@ -808,6 +807,9 @@
   
   <!-- Theme JS -->
   <script src="./assets/js/theme.bundle.js"></script>
+
+  <!-- Search Autocomplete JS-->
+  <script src="search-autocomplete.js"></script>
 
   </body>
 </html>
