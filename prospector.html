@@ -320,48 +320,116 @@
                   </div>
                 </div>
             
-                <!-- OVERVIEW/filter-->
-                <div class="accordion" id="peopleOverviewAccordion">
-                  <div class="card border-0">
-            
-            
-                        <!-- collapse-->
-                        <div class="collapse show" id="peopleOverview" data-bs-parent="#peopleOverviewAccordion">
-                          <div class="card-body bg-lighter border rounded">
-                            <form>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Current company</label>
-                                <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft"
-                                  id="exampleInputCompany" aria-describedby="emailHelp">
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Name</label>
-                                <input type="text" class="form-control form-control-sm" placeholder="Bill Gates, Jeff Bezos"
-                                  id="exampleInputCompany" aria-describedby="emailHelp">
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Job Title</label>
-                                <input type="text" class="form-control form-control-sm"
-                                  placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
-                                  aria-describedby="emailHelp">
-                              </div>
-                              <div class="mb-4">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Past company</label>
-                                <input type="text" class="form-control form-control-sm" placeholder="E.g. Google, IBM, Twitter"
-                                  id="exampleInputCompany" aria-describedby="emailHelp">
-                              </div>
-                              <div class="mb-2">
-                                <label for="exampleInputCompany" class="form-label font-weight-bold">Location</label>
-                                <input type="text" class="form-control form-control-sm"
-                                  placeholder="E.g. United States, San Francisco, London" id="exampleInputCompany"
-                                  aria-describedby="emailHelp">
-                              </div>
-                            </form>
+                      <!-- OVERVIEW/filter-->
+                      <div>
+                        <div class="card border-0">
+
+                          <div class="mb-3" id="peopleOverview">
+                            <div class="card-body bg-lighter border rounded">
+                              <form>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Current Company</label>
+                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft"
+                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                    <ul class="list-group suggestions" id="companySuggestions"></ul>  
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Name</label>
+                                  <input type="text" class="form-control form-control-sm" placeholder="Bill Gates, Jeff Bezos"
+                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Job Title</label>
+                                  <input type="text" class="form-control form-control-sm"
+                                    placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
+                                    aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany2" class="form-label font-weight-bold">Past Company</label>
+                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. Google, IBM, Twitter"
+                                    id="exampleInputCompany2" aria-describedby="emailHelp">
+                                    <ul class="list-group suggestions" id="companySuggestions2"></ul>  
+                                </div>
+                                <div class="mb-2">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Location</label>
+                                  <input type="text" class="form-control form-control-sm"
+                                    placeholder="E.g. United States, San Francisco, London" id="exampleInputCompany"
+                                    aria-describedby="emailHelp">
+                                </div>
+                              </form>
+                            </div>              
+                          </div>
+
+                          <!-- ADVANCED FILTER-->
+                          <div class="">
+                            <div class="card-body bg-lighter border rounded">
+                              <!-- toggle-->
+                              <a class="d-flex align-items-center text-reset text-decoration-none" data-bs-toggle="collapse"
+                                href="#peopleAdvanced" role="button" aria-expanded="false" aria-controls="peopleAdvanced">
+                                <div class=" font-weight-bold me-auto"><i class="fe fe-sliders me-3"></i>Advanced filter</div>
+                                <!-- chevron-->
+                                <span class="collapse-chevron text-muted ms-4 mb-n1">
+                                  <i class="fe fe-lg fe-chevron-down"></i>
+                                </span>
+                              </a>
+                              <form class="collapse hide pt-4 mt-4 border-top" id="peopleAdvanced">
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Past Job Title</label>
+                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. CEO, CTO, Senior Software Engineer"
+                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                    <ul class="list-group suggestions" id="companySuggestions"></ul>  
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Headline</label>
+                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. CEO, CTO, Senior Software Engineer"
+                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Industry</label>
+                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. Technology, Software, Accounting"
+                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Skill</label>
+                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. Coding, Debugging, Testing"
+                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Past Education</label>
+                                  <input type="text" class="form-control form-control-sm"
+                                    placeholder="E.g. Harvard University" id="exampleInputCompany"
+                                    aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Education Degree</label>
+                                  <input type="text" class="form-control form-control-sm"
+                                    placeholder="E.g. MBA" id="exampleInputCompany"
+                                    aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany2" class="form-label font-weight-bold">Field of Study</label>
+                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. Engineer, Art, Economics"
+                                    id="exampleInputCompany2" aria-describedby="emailHelp">
+                                    <ul class="list-group suggestions" id="companySuggestions2"></ul>  
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Current Company Type</label>
+                                  <input type="text" class="form-control form-control-sm"
+                                    placeholder="E.g. Public Company, Privately Held, Educational" id="exampleInputCompany"
+                                    aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-2">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Language</label>
+                                  <input type="text" class="form-control form-control-sm"
+                                    placeholder="E.g. English, Chinese, Spanish" id="exampleInputCompany"
+                                    aria-describedby="emailHelp">
+                                </div>
+                              </form>
+                            </div>              
                           </div>
                         </div>
+                        
                       </div>
-
-                </div>
             
                 <a class="btn btn-success rounded-pill btn-block lift" href="prospector-people-loading.html"><i class="neu neu-search"></i> Search criteria</a>
               </div>
