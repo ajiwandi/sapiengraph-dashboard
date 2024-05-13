@@ -280,11 +280,6 @@
                     </h1>
     
                   </div>
-                  <div class="text-end col-5">
-                    <div class="btn btn-sm btn-light rounded-pill mt-n3 text-muted disabled">
-                      <i class="neu neu-so-save"></i>Save search
-                    </div>
-                  </div>
                 </div> <!-- / .row -->
               </div>
             </div>
@@ -576,16 +571,19 @@
     <script>
       // Function to show spinners with a delay
       function showSpinnerWithDelay(spinnerId, delay) {
-        setTimeout(function() {
+        setTimeout(function () {
           document.getElementById(spinnerId).classList.remove('d-none');
         }, delay);
       }
-    
+
       // Call the function for each spinner with a specific delay
       showSpinnerWithDelay('spinner1', 500); // Show spinner1 after 1 second
       showSpinnerWithDelay('spinner2', 600); // Show spinner2 after 2 seconds
       showSpinnerWithDelay('spinner3', 700); // Show spinner3 after 3 seconds
     </script>
+    
+    <!-- Search Autocomplete JS-->
+    <script src="search-autocomplete.js"></script>
 
   </body>
 </html>

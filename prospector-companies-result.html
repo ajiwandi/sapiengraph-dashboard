@@ -261,7 +261,7 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-12 main-content-prospector">
-            <!-- PEOPLE TAB-->
+            <!-- COMPANIES TAB-->
               <!-- Header -->
               <div class="header mt-5">
                 <div class="">
@@ -279,11 +279,6 @@
                         Companies Prospector
                       </h1>
         
-                    </div>
-                    <div class="text-end col-5">
-                      <div class="btn btn-sm btn-success rounded-pill mt-n3">
-                        <i class="neu neu-so-save"></i>Save search
-                      </div>
                     </div>
                   </div> <!-- / .row -->
                 </div>
@@ -318,7 +313,8 @@
                     <div class="card card-body custom-rounded shadow-light border">
                       <div class="d-flex align-items-center mb-n2">
                         <div class="font-weight-bold h3 mt-n2"><span class="mr-1">Filter Criteria</span>
-                          <a class="btn btn-outline-success rounded-pill btn-sm font-weight-bold h3 mt-3 ms-2" href="prospector-companies.html">Reset</a>
+                          <a class="btn btn-outline-success rounded-pill btn-sm font-weight-bold h3 mt-3 ms-3" href="prospector-companies.html">Reset</a>
+                          <a class="btn btn-link text-success rounded-pill btn-sm font-weight-bold h3 mt-3 ms-n1" href="#!"><i class="neu neu-so-save d-none d-md-inline-block"></i> Save search</a>                        
                         </div>
               
                         <button class="btn btn-sm btn-success rounded-pill lift font-weight-bold ms-auto d-none d-xl-block mt-n4"><i
@@ -333,9 +329,9 @@
                             <div class="card-body bg-lighter border rounded">
                               <form>
                                 <div class="mb-4">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Industry</label>
+                                  <label for="exampleInputIndustry" class="form-label font-weight-bold">Industry</label>
                                   <input type="text" class="form-control form-control-sm" placeholder="E.g. Technology, Software, Entertainment"
-                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                    id="exampleInputIndustry" aria-describedby="emailHelp">
                                   <div class="mt-2">
                                     <div class="btn rounded-pill btn-sm btn-outline-success me-1 ps-3 mt-2"> Software Development <i
                                         class="neu neu-so-close-circle ms-1"></i></div>
@@ -344,9 +340,10 @@
                                   </div>
                                 </div>
                                 <div class="mb-4">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Name</label>
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Company Name</label>
                                   <input type="text" class="form-control form-control-sm" placeholder="E.g. Google, Apple, Microsoft"
                                     id="exampleInputCompany" aria-describedby="emailHelp">
+                                    <ul class="list-group suggestions" id="companySuggestions"></ul>  
                                 </div>
                                 <div class="mb-4">
                                   <label for="exampleInputCompany" class="form-label font-weight-bold">Location</label>
@@ -392,55 +389,62 @@
                               </a>
                               <form class="collapse hide pt-4 mt-4 border-top" id="peopleAdvanced">
                                 <div class="mb-4">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Past Job Title</label>
-                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. CEO, CTO, Senior Software Engineer"
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Employee Count</label>
+                                  <div class="d-flex justify-content-between">
+                                    <input style="width: 45%;" type="text" class="form-control form-control-sm"
+                                      placeholder="Min" id="exampleInputCompany" aria-describedby="emailHelp">
+                                      <hr style="height: 2px; width: 2%; margin-top: 14px;"> <input style="width: 45%;" type="text" class="form-control form-control-sm"
+                                      placeholder="Max" id="exampleInputCompany" aria-describedby="emailHelp">
+                                  </div>
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Year Founded</label>
+                                  <div class="d-flex justify-content-between">
+                                    <input style="width: 45%;" type="text" class="form-control form-control-sm"
+                                      placeholder="Min" id="exampleInputCompany" aria-describedby="emailHelp">
+                                      <hr style="height: 2px; width: 2%; margin-top: 14px;"> <input style="width: 45%;" type="text" class="form-control form-control-sm"
+                                      placeholder="Max" id="exampleInputCompany" aria-describedby="emailHelp">
+                                  </div>
+                                </div>
+                                <div class="mb-4">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Description</label>
+                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. Medical Device"
                                     id="exampleInputCompany" aria-describedby="emailHelp">
-                                    <ul class="list-group suggestions" id="companySuggestions"></ul>  
                                 </div>
                                 <div class="mb-4">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Headline</label>
-                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. CEO, CTO, Senior Software Engineer"
-                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Follower Count</label>
+                                  <div class="d-flex justify-content-between">
+                                    <input style="width: 45%;" type="text" class="form-control form-control-sm"
+                                      placeholder="Min" id="exampleInputCompany" aria-describedby="emailHelp">
+                                      <hr style="height: 2px; width: 2%; margin-top: 14px;"> <input style="width: 45%;" type="text" class="form-control form-control-sm"
+                                      placeholder="Max" id="exampleInputCompany" aria-describedby="emailHelp">
+                                  </div>
                                 </div>
                                 <div class="mb-4">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Industry</label>
-                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. Technology, Software, Accounting"
-                                    id="exampleInputCompany" aria-describedby="emailHelp">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Funding Amount</label>
+                                  <div class="d-flex justify-content-between">
+                                    <div class="input-group" style="width: 45%;">
+                                      <span class="input-group-text">$</span>
+                                      <input type="text" class="form-control form-control-sm" placeholder="Min" id="exampleInputCompany"
+                                        aria-describedby="emailHelp">
+                                    </div>
+                                    <hr style="height: 2px; width: 2%; margin-top: 14px;">
+                                    <div class="input-group" style="width: 45%;">
+                                      <span class="input-group-text">$</span>
+                                      <input style="width: 45%;" type="text" class="form-control form-control-sm" placeholder="Max"
+                                        id="exampleInputCompany" aria-describedby="emailHelp">
+                                    </div>
+                                  </div>
                                 </div>
                                 <div class="mb-4">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Skill</label>
-                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. Coding, Debugging, Testing"
-                                    id="exampleInputCompany" aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-4">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Past Education</label>
-                                  <input type="text" class="form-control form-control-sm"
-                                    placeholder="E.g. Harvard University" id="exampleInputCompany"
-                                    aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-4">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Education Degree</label>
-                                  <input type="text" class="form-control form-control-sm"
-                                    placeholder="E.g. MBA" id="exampleInputCompany"
-                                    aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-4">
-                                  <label for="exampleInputCompany2" class="form-label font-weight-bold">Field of Study</label>
-                                  <input type="text" class="form-control form-control-sm" placeholder="E.g. Engineer, Art, Economics"
-                                    id="exampleInputCompany2" aria-describedby="emailHelp">
-                                    <ul class="list-group suggestions" id="companySuggestions2"></ul>  
-                                </div>
-                                <div class="mb-4">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Current Company Type</label>
-                                  <input type="text" class="form-control form-control-sm"
-                                    placeholder="E.g. Public Company, Privately Held, Educational" id="exampleInputCompany"
-                                    aria-describedby="emailHelp">
-                                </div>
-                                <div class="mb-2">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Language</label>
-                                  <input type="text" class="form-control form-control-sm"
-                                    placeholder="E.g. English, Chinese, Spanish" id="exampleInputCompany"
-                                    aria-describedby="emailHelp">
+                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Funding Raised</label>
+                                  <div class="d-flex justify-content-between">
+                                    <input style="width: 45%;" type="date" class="form-control form-control-sm text-muted"
+                                      placeholder="Min" id="exampleInputCompany" aria-describedby="emailHelp">
+                                      <hr style="height: 2px; width: 2%; margin-top: 14px;"> 
+                                      <input style="width: 45%;" type="date" class="form-control form-control-sm text-muted"
+                                      placeholder="Max" id="exampleInputCompany" aria-describedby="emailHelp">
+                                  </div>
                                 </div>
                               </form>
                             </div>              
@@ -505,6 +509,7 @@
                                 <label class="form-check-label small text-muted" for="selectAllCheckbox"></label>
                               </th>
                               <th scope="col">Company Name</th>
+                              <th scope="col">LinkedIn</th>
                               <th scope="col">Employees</th>
                               <th scope="col">Industries</th>
                               <th scope="col">Revenue</th>
@@ -529,6 +534,8 @@
                                   </div>
                                   <div class="ms-3 ">Microsoft</div>
                                 </a>
+                              </td>
+                              <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/amazon
                               </td>
                               <td class="align-middle">181,000
                               </td>
@@ -557,6 +564,8 @@
                                   <div class="ms-3 ">Amazon</div>
                                 </a>
                               </td>
+                              <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/amazon
+                              </td>
                               <td class="align-middle">1,300,000
                               </td>
                               <td class="align-middle custom-table-cell">E-commerce, Cloud Computing, Digital Content and Media, Logistics and Transportation, Artificial Intelligence and Machine Learning, Grocery and Food Delivery, Hardware, Advertising.</td>
@@ -583,6 +592,8 @@
                                   </div>
                                   <div class="ms-3 ">*******</div>
                                 </a>
+                              </td>
+                              <td class="align-middle">********************
                               </td>
                               <td class="align-middle">*****
                               </td>
@@ -613,6 +624,8 @@
                                   <div class="ms-3 ">*******</div>
                                 </a>
                               </td>
+                              <td class="align-middle">************************
+                              </td>
                               <td class="align-middle">********
                               </td>
                               <td class="align-middle custom-table-cell">Music Streaming, Technology and Internet Services, and Media and Entertainment industries.</td>
@@ -642,6 +655,8 @@
                                   <div class="ms-3 ">Google</div>
                                 </a>
                               </td>
+                              <td class="align-middle"><i class="neu neu-br-linkedin-sq"></i> linkedin.com/company/amazon
+                              </td>
                               <td class="align-middle">150,000
                               </td>
                               <td class="align-middle custom-table-cell">Technology and Internet Services, Advertising and Marketing, Software Development, Hardware Manufacturing, Artificial Intelligence and Machine Learning, Cloud Computing, Mobile Applications, Research and Development.</td>
@@ -668,6 +683,8 @@
                                   </div>
                                   <div class="ms-3 ">Adobe</div>
                                 </a>
+                              </td>
+                              <td class="align-middle">*********************
                               </td>
                               <td class="align-middle">*******
                               </td>
@@ -698,6 +715,8 @@
                                   <div class="ms-3 ">***</div>
                                 </a>
                               </td>
+                              <td class="align-middle">******************
+                              </td>
                               <td class="align-middle">*****
                               </td>
                               <td class="align-middle custom-table-cell">Technology Solutions and Services, Software Development, Cloud Computing, Artificial Intelligence and Machine Learning, Consulting and Business Services, Hardware Manufacturing.</td>
@@ -726,6 +745,8 @@
                                   </div>
                                   <div class="ms-3 ">*******</div>
                                 </a>
+                              </td>
+                              <td class="align-middle">***********************
                               </td>
                               <td class="align-middle">*********
                               </td>
@@ -756,6 +777,8 @@
                                   <div class="ms-3 ">*****</div>
                                 </a>
                               </td>
+                              <td class="align-middle">*********************
+                              </td>
                               <td class="align-middle">**********
                               </td>
                               <td class="align-middle custom-table-cell">
@@ -785,6 +808,8 @@
                                   </div>
                                   <div class="ms-3 ">****</div>
                                 </a>
+                              </td>
+                              <td class="align-middle">********************
                               </td>
                               <td class="align-middle">*********
                               </td>
@@ -943,6 +968,9 @@
   
   <!-- Theme JS -->
   <script src="./assets/js/theme.bundle.js"></script>
+
+  <!-- Search Autocomplete JS-->
+  <script src="search-autocomplete.js"></script>    
 
   </body>
 </html>
