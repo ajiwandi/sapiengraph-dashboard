@@ -64,3 +64,62 @@ document.addEventListener('click', function(event) {
         suggestionsList.innerHTML = '';
     }
 });
+
+// Second input and suggestions list
+const companyInput2 = document.getElementById('exampleInputCompany2');
+const suggestionsList2 = document.getElementById('companySuggestions2');
+
+// Function to render company suggestions for the second input
+function renderCompanySuggestions2(suggestions) {
+    suggestionsList2.innerHTML = '';
+    suggestions.forEach(suggestion => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('list-group-item', 'd-flex', 'align-items-center');
+        const img = document.createElement('img');
+        img.src = suggestion.logo;
+        img.alt = suggestion.name;
+        img.style.width = '20px'; // Adjust size as needed
+        img.style.marginRight = '10px'; // Adjust margin as needed
+        const textNode = document.createTextNode(suggestion.name);
+        listItem.appendChild(img);
+        listItem.appendChild(textNode);
+        suggestionsList2.appendChild(listItem);
+    });
+}
+
+// Event listener for input focus for the second input
+companyInput2.addEventListener('focus', function() {
+    const userInput = companyInput2.value.toLowerCase();
+    const filteredSuggestions = companies.filter(company =>
+        company.name.toLowerCase().includes(userInput)
+    );
+    renderCompanySuggestions2(filteredSuggestions);
+});
+
+// Event listener for input change for the second input
+companyInput2.addEventListener('input', function(e) {
+    const userInput = e.target.value.toLowerCase();
+    const filteredSuggestions = companies.filter(company =>
+        company.name.toLowerCase().includes(userInput)
+    );
+    renderCompanySuggestions2(filteredSuggestions);
+});
+
+// Event listener for suggestion click for the second suggestions list
+suggestionsList2.addEventListener('click', function(e) {
+    if (e.target && e.target.matches('li.list-group-item')) {
+        companyInput2.value = e.target.innerText.trim();
+        suggestionsList2.innerHTML = ''; // Clear suggestions after selection
+        // You can perform any action here on suggestion selection
+    }
+});
+
+// Event listener to close suggestions when clicking outside for the second suggestions list
+document.addEventListener('click', function(event) {
+    const target = event.target;
+    // Check if the click target is not the input field or the suggestions list
+    if (target !== companyInput2 && !companyInput2.contains(target) && target !== suggestionsList2 && !suggestionsList2.contains(target)) {
+        // Clear the suggestion list
+        suggestionsList2.innerHTML = '';
+    }
+});
