@@ -22,13 +22,12 @@
     <!-- Title -->
     <title>People - Sapiengraph Prospector - Dashboard</title>
     <style>
-
       th.active-header {
       color: black !important;
-    }
-    th:hover {
+      }
+      th:hover {
       cursor: pointer;
-    }
+      }
     </style>
   </head>
   <body>
@@ -310,156 +309,160 @@
             </div>
             
             <div class="row">
-            <!-- FILTER-->
-            <div class="col-12 col-lg-6 col-xl-4 mb-2 mb-lg-0">
-              <div class="card card-body custom-rounded shadow-light border">
-                <div class="d-flex align-items-center mb-n2">
-                  <div class="font-weight-bold h3 mt-n2"><span class="mr-1">Filter Criteria</span>
-                    <a class="btn btn-outline-secondary rounded-pill btn-sm font-weight-bold h3 mt-3 ms-3 disabled" href="prospector-customers.html">Reset</a>
-                    <a class="btn btn-link text-secondary rounded-pill btn-sm font-weight-bold h3 mt-3 ms-n1 disabled" href="prospector-customers.html"><i class="neu neu-so-save d-none d-md-inline-block"></i> Save search</a>     
-                  </div>
-                </div>
-                
-                <!-- OVERVIEW/filter-->
-                <div>
-                  <div class="card border-0">
-                
-                    <div class="mb-3" id="peopleOverview">
-                      <div class="card-body bg-lighter border rounded">
-                        <form>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Current Company</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft"
-                              id="exampleInputCompany" aria-describedby="emailHelp">
-                            <ul class="list-group suggestions" id="companySuggestions"></ul>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Name</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="Bill Gates, Jeff Bezos"
-                              id="exampleInputCompany" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Job Title</label>
-                            <input type="text" class="form-control form-control-sm"
-                              placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
-                              aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany2" class="form-label font-weight-bold">Past Company</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Google, IBM, Twitter"
-                              id="exampleInputCompany2" aria-describedby="emailHelp">
-                            <ul class="list-group suggestions" id="companySuggestions2"></ul>
-                          </div>
-                          <div class="mb-2">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Location</label>
-                            <input type="text" class="form-control form-control-sm"
-                              placeholder="E.g. United States, San Francisco, London" id="exampleInputCompany"
-                              aria-describedby="emailHelp">
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                
-                    <!-- ADVANCED FILTER-->
-                    <div class="">
-                      <div class="card-body bg-lighter border rounded">
-                        <!-- toggle-->
-                        <a class="d-flex align-items-center text-reset text-decoration-none" data-bs-toggle="collapse"
-                          href="#peopleAdvanced" role="button" aria-expanded="false" aria-controls="peopleAdvanced">
-                          <div class=" font-weight-bold me-auto"><i class="fe fe-sliders me-3"></i>Advanced filter</div>
-                          <!-- chevron-->
-                          <span class="collapse-chevron text-muted ms-4 mb-n1">
-                            <i class="fe fe-lg fe-chevron-down"></i>
-                          </span>
-                        </a>
-                        <form class="collapse hide pt-4 mt-4 border-top" id="peopleAdvanced">
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Past Job Title</label>
-                            <input type="text" class="form-control form-control-sm"
-                              placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
-                              aria-describedby="emailHelp">
-                            <ul class="list-group suggestions" id="companySuggestions"></ul>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Headline</label>
-                            <input type="text" class="form-control form-control-sm"
-                              placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
-                              aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Industry</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Technology, Software, Accounting"
-                              id="exampleInputCompany" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Skill</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Coding, Debugging, Testing"
-                              id="exampleInputCompany" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Past Education</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Harvard University"
-                              id="exampleInputCompany" aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Education Degree</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. MBA" id="exampleInputCompany"
-                              aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany2" class="form-label font-weight-bold">Field of Study</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. Engineer, Art, Economics"
-                              id="exampleInputCompany2" aria-describedby="emailHelp">
-                            <ul class="list-group suggestions" id="companySuggestions2"></ul>
-                          </div>
-                          <div class="mb-4">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Current Company Type</label>
-                            <input type="text" class="form-control form-control-sm"
-                              placeholder="E.g. Public Company, Privately Held, Educational" id="exampleInputCompany"
-                              aria-describedby="emailHelp">
-                          </div>
-                          <div class="mb-2">
-                            <label for="exampleInputCompany" class="form-label font-weight-bold">Language</label>
-                            <input type="text" class="form-control form-control-sm" placeholder="E.g. English, Chinese, Spanish"
-                              id="exampleInputCompany" aria-describedby="emailHelp">
-                          </div>
-                        </form>
-                      </div>
+            
+              <!-- FILTER-->
+              <div class="col-12 col-lg-6 col-xl-4 mb-2 mb-lg-0">
+                <div class="card card-body custom-rounded shadow-light border">
+                  <div class="d-flex align-items-center mb-n2">
+                    <div class="font-weight-bold h3 mt-n2"><span class="mr-1">Filter Criteria</span>
+                      <a class="btn btn-outline-secondary rounded-pill btn-sm font-weight-bold h3 mt-3 ms-3 disabled"
+                        href="prospector-customers.html">Reset</a>
+                      <a class="btn btn-link text-secondary rounded-pill btn-sm font-weight-bold h3 mt-3 ms-n1 disabled"
+                        href="prospector-customers.html"><i class="neu neu-so-save d-none d-md-inline-block"></i> Save search</a>
                     </div>
                   </div>
-                
-                </div>
             
-                <a class="btn btn-outline-success rounded-pill btn-block lift" href="prospector-people-loading.html"><i class="neu neu-search"></i> Search criteria</a>
-              </div>
-            </div>
+                  <!-- OVERVIEW/filter-->
+                  <div>
+                    <div class="card border-0">
             
-            <!-- RESULT-->
-            <div class="col-12 col-lg-6 col-xl-8">
-              <div class="card custom-rounded bg-white text-center pb-lg-3">
-                <div class="card-body">
-                  <p class="pt-4 pt-lg-3 text-gray-400 d-none d-xl-block"><i class="fe fe-arrow-left me-2"></i> Filter and search
-                    your criteria to show the result</p>
-                  <div class="pt-4 pt-lg-3 text-gray-400 d-block d-xl-none"><i class="fe fe-arrow-up me-1"></i> <span
-                      class="mt-3">Filter and search your criteria to show the result</span></div>
-                  <div class="d-none d-xl-block">
-                    <img class="img-fluid mt-4 mb-5" style="max-width: 400px;" alt="Prospector search illustration"
-                      src="assets/img/illustrations/prospector-search.png">
+                      <div class="mb-3" id="peopleOverview">
+                        <div class="card-body bg-lighter border rounded">
+                          <form>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Current Company</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft"
+                                id="exampleInputCompany" aria-describedby="emailHelp">
+                              <ul class="list-group suggestions" id="companySuggestions"></ul>
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Name</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="Bill Gates, Jeff Bezos"
+                                id="exampleInputCompany" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Job Title</label>
+                              <input type="text" class="form-control form-control-sm"
+                                placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
+                                aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany2" class="form-label font-weight-bold">Past Company</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. Google, IBM, Twitter"
+                                id="exampleInputCompany2" aria-describedby="emailHelp">
+                              <ul class="list-group suggestions" id="companySuggestions2"></ul>
+                            </div>
+                            <div class="mb-2">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Location</label>
+                              <input type="text" class="form-control form-control-sm"
+                                placeholder="E.g. United States, San Francisco, London" id="exampleInputCompany"
+                                aria-describedby="emailHelp">
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+            
+                      <!-- ADVANCED FILTER-->
+                      <div class="">
+                        <div class="card-body bg-lighter border rounded">
+                          <!-- toggle-->
+                          <a class="d-flex align-items-center text-reset text-decoration-none" data-bs-toggle="collapse"
+                            href="#peopleAdvanced" role="button" aria-expanded="false" aria-controls="peopleAdvanced">
+                            <div class=" font-weight-bold me-auto"><i class="fe fe-sliders me-3"></i>Advanced filter</div>
+                            <!-- chevron-->
+                            <span class="collapse-chevron text-muted ms-4 mb-n1">
+                              <i class="fe fe-lg fe-chevron-down"></i>
+                            </span>
+                          </a>
+                          <form class="collapse hide pt-4 mt-4 border-top" id="peopleAdvanced">
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Past Job Title</label>
+                              <input type="text" class="form-control form-control-sm"
+                                placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
+                                aria-describedby="emailHelp">
+                              <ul class="list-group suggestions" id="companySuggestions"></ul>
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Headline</label>
+                              <input type="text" class="form-control form-control-sm"
+                                placeholder="E.g. CEO, CTO, Senior Software Engineer" id="exampleInputCompany"
+                                aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Industry</label>
+                              <input type="text" class="form-control form-control-sm"
+                                placeholder="E.g. Technology, Software, Accounting" id="exampleInputCompany"
+                                aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Skill</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. Coding, Debugging, Testing"
+                                id="exampleInputCompany" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Past Education</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. Harvard University"
+                                id="exampleInputCompany" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Education Degree</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. MBA"
+                                id="exampleInputCompany" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany2" class="form-label font-weight-bold">Field of Study</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. Engineer, Art, Economics"
+                                id="exampleInputCompany2" aria-describedby="emailHelp">
+                              <ul class="list-group suggestions" id="companySuggestions2"></ul>
+                            </div>
+                            <div class="mb-4">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Current Company Type</label>
+                              <input type="text" class="form-control form-control-sm"
+                                placeholder="E.g. Public Company, Privately Held, Educational" id="exampleInputCompany"
+                                aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-2">
+                              <label for="exampleInputCompany" class="form-label font-weight-bold">Language</label>
+                              <input type="text" class="form-control form-control-sm" placeholder="E.g. English, Chinese, Spanish"
+                                id="exampleInputCompany" aria-describedby="emailHelp">
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+            
                   </div>
-                  <div class="d-none d-md-block d-xl-none">
-                    <img class="img-fluid mt-7 mb-7" style="max-width: 200px;" alt="Prospector search illustration"
-                      src="assets/img/illustrations/prospector-search.png">
-                  </div>
-                  <div class="d-flex justify-content-center d-block d-md-none">
-                    <img class="img-fluid mt-4" style="max-width: 100%;" alt="Prospector search illustration"
-                      src="assets/img/illustrations/prospector-search.png">
+            
+                  <a class="btn btn-outline-success rounded-pill btn-block lift" href="prospector-people-loading.html"><i
+                      class="neu neu-search"></i> Search criteria</a>
+                </div>
+              </div>
+            
+              <!-- RESULT-->
+              <div class="col-12 col-lg-6 col-xl-8">
+                <div class="card custom-rounded bg-white text-center pb-lg-3">
+                  <div class="card-body">
+                    <p class="pt-4 pt-lg-3 text-gray-400 d-none d-xl-block"><i class="fe fe-arrow-left me-2"></i> Filter and search
+                      your criteria to show the result</p>
+                    <div class="pt-4 pt-lg-3 text-gray-400 d-block d-xl-none"><i class="fe fe-arrow-up me-1"></i> <span
+                        class="mt-3">Filter and search your criteria to show the result</span></div>
+                    <div class="d-none d-xl-block">
+                      <img class="img-fluid mt-4 mb-5" style="max-width: 400px;" alt="Prospector search illustration"
+                        src="assets/img/illustrations/prospector-search.png">
+                    </div>
+                    <div class="d-none d-md-block d-xl-none">
+                      <img class="img-fluid mt-7 mb-7" style="max-width: 200px;" alt="Prospector search illustration"
+                        src="assets/img/illustrations/prospector-search.png">
+                    </div>
+                    <div class="d-flex justify-content-center d-block d-md-none">
+                      <img class="img-fluid mt-4" style="max-width: 100%;" alt="Prospector search illustration"
+                        src="assets/img/illustrations/prospector-search.png">
+                    </div>
                   </div>
                 </div>
               </div>
+            
             </div>
-            </div>
-
-
 
             <br>
     
