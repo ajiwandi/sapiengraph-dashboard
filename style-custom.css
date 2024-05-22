@@ -183,3 +183,8 @@ td,th {
   color: #02BD94 !important;
 }
 /* FOR SEARCH AUTOCOMPLETE */
+
+.scrollable-div {
+  max-height: 645px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
