@@ -311,16 +311,18 @@
                   <!-- FILTER-->
                   <div class="col-12 col-lg-12 col-xl-4 mb-2 mb-lg-0">
                     <div class="card card-body custom-rounded shadow-light border">
-                      <div class="d-flex align-items-center mb-n2">
-                        <div class="font-weight-bold h3 mt-n2"><span class="mr-1">Filter Criteria</span>
-                          <a class="btn btn-outline-success rounded-pill btn-sm font-weight-bold h3 mt-3 ms-3" href="prospector-customers.html">Reset</a>
-                          <a class="btn btn-link text-success rounded-pill btn-sm font-weight-bold h3 mt-3 ms-n1" href="#!"><i class="neu neu-so-save d-none d-md-inline-block"></i> Save search</a>                        
+                      <div class="d-flex align-items-center mt-1 mb-3">
+                        <div class=" h3"><span class="mr-1">Filter Criteria</span>
+                          <span id="tooltip-target" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                            title='We support <a class="fw-bold text-success link-hover" target="_blank" href="https://nubela.co/blog/ultimate-guide-to-boolean-search-syntax/">Boolean Search Syntax</a> in our search parameters.'>
+                            <i class="fe fe-info small"></i></span>
                         </div>
-                        
-                        <div class="ms-auto">
-                        <button class="btn btn-sm btn-success rounded-pill lift font-weight-bold ms-auto d-none d-xl-block mt-n4"><i
+                        <a class="btn btn-outline-success rounded-pill btn-sm  h3 ms-4" href="prospector-customers.html">Reset</a>
+                        <a class="btn btn-link text-success rounded-pill btn-sm  h3 ms-n1" href="#!"><i
+                            class="neu neu-so-save d-none d-md-inline-block"></i> Save search</a>
+                      
+                        <button class="btn btn-sm btn-success rounded-pill lift  ms-auto d-none d-xl-block mt-n3"><i
                             class="fe fe-chevron-left"></i></button>
-                        </div>    
                       </div>
               
                       <!-- OVERVIEW/filter-->
@@ -331,7 +333,7 @@
                             <div class="card-body bg-lighter border rounded">
                               <form>
                                 <div class="mb-2">
-                                  <label for="exampleInputCompany" class="form-label font-weight-bold">Company Name</label>
+                                  <label for="exampleInputCompany" class="form-label ">Company Name</label>
                                   <input type="text" class="form-control form-control-sm" placeholder="E.g. Apple, Amazon, Microsoft"
                                     id="exampleInputCompany" aria-describedby="emailHelp">
                                     <ul class="list-group suggestions" id="companySuggestions"></ul>  
@@ -357,12 +359,12 @@
               
                       <div class="row mb-3">
                         <div class="col-12 col-lg-5">
-                          <p class="font-weight-bold mt-2"><i class="neu neu-so-structure me-1 text-success"></i>5,678 <span
+                          <p class=" mt-2"><i class="neu neu-so-structure me-1 text-success"></i>5,678 <span
                               class="font-weight-normal text-muted">results found</span></p>
                         </div>
                         <div class="col-12 col-lg-7 d-md-flex justify-content-lg-end mt-4 mt-md-1">
                           <div
-                            class="font-weight-bold text-muted small text-right me-md-2 mb-3 mb-md-0 mt-n3 d-flex align-items-center">
+                            class=" text-muted small text-right me-md-2 mb-3 mb-md-0 mt-n3 d-flex align-items-center">
                             <!-- Added d-flex and align-items-center -->
                             <span class="flex-grow-1">Displaying</span> <!-- Displaying text with flex-grow-1 -->
                             <div class="btn-group ms-3 ms-md-2 w-100"> <!-- Button group -->
@@ -378,7 +380,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="font-weight-bold text-muted small text-right mb-3 mb-lg-0">
+                          <div class=" text-muted small text-right mb-3 mb-lg-0">
                             <div class="btn-group w-100">
                               <button type="button" class="btn btn-sm rounded-pill px-3 btn-outline-success dropdown-toggle ms-1"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -805,11 +807,25 @@
   <!-- Vendor JS -->
   <script src="./assets/js/vendor.bundle.js"></script>
   
-  <!-- Theme JS -->
+  <!-- Theme JS
   <script src="./assets/js/theme.bundle.js"></script>
+  -->
 
   <!-- Search Autocomplete JS-->
-  <script src="search-autocomplete.js"></script>
+  <script src="search-autocomplete.js"></script> 
+
+  <!-- POPOVER CONTENT REMAIN VISIBLE JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl, {
+        trigger: 'hover',
+        delay: { show: 0, hide: 1200 } // Add a delay when hiding the popover
+      })
+    })
+  </script>
 
   </body>
 </html>

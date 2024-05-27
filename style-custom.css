@@ -135,6 +135,11 @@ td,th {
   color: #02BD94 !important;
 }
 
+.link-hover:hover {
+  color: #06AC87 !important;
+  text-decoration: underline !important;
+}
+
 @media (max-width: 576px) {
   .btn-mobile-full-width {
     width: 100% !important;
@@ -183,3 +188,8 @@ td,th {
   color: #02BD94 !important;
 }
 /* FOR SEARCH AUTOCOMPLETE */
+
+.scrollable-div {
+  max-height: 645px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
