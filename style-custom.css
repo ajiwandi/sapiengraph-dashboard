@@ -137,7 +137,7 @@ td,th {
 
 .link-hover:hover {
   color: #06AC87 !important;
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 @media (max-width: 576px) {
